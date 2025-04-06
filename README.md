@@ -88,12 +88,12 @@
 
 **3. יצירת סקריפט בפייתון**  
 יצרנו נתונים בעזרת סקריפט פייתון עבור רשומות הכניסה והיציאה, אותם העברנו לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
-### 🟢 רשומות כניסה (Entry Records)
+##### 🟢 רשומות כניסה (Entry Records)
 
 - [entryRecord.csv](Stage_A/data/python%20scripts/entry_record/entryRecord.csv)  
 - [insert_entry_record.py](Stage_A/data/python%20scripts/entry_record/insert_entry_record.py)
 
-### 🔴 רשומות יציאה (Exit Records)
+##### 🔴 רשומות יציאה (Exit Records)
 
 - [exitRecord.csv](Stage_A/data/python%20scripts/exit_record/exitRecord.csv)  
 - [insert_exit_record.py](Stage_A/data/python%20scripts/exit_record/insert_exit_record.py)
