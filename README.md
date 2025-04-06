@@ -84,8 +84,8 @@
 בנוסף, הכנסנו בצורה ידנית את פקודות ה־INSERT עבור מנויים, אנשים ועובדי תחזוקה.  
 #### 🔗 קישורים לקבצים:
 - [insert_member_400_from_800 (1).sql](Stage_A/data/insert%20commands/insert_member_400_from_800%20%281%29.sql)
-- [insert_zones.sql](Stage_A/data/insert%20commands/insert_person_800.sql)
-- [insert_repairs.sql](Stage_A/data/insert%20commands/insert_worker_400_from_800.sql)
+- [insert_person_800.sql](Stage_A/data/insert%20commands/insert_person_800.sql)
+- [insert_worker_400_from_800.sql](Stage_A/data/insert%20commands/insert_worker_400_from_800.sql)
 
 **3. יצירת סקריפט בפייתון**  
 יצרנו נתונים בעזרת סקריפט פייתון עבור רשומות הכניסה והיציאה, שמסתמך על נתונים ממכשירי גישה ואנשים (מכיוון שהמפתחות שלהם הם מפתחות זרים לרשומות). אותם העברנו לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
@@ -98,7 +98,7 @@
 
 - [exitRecord.csv](Stage_A/data/python%20scripts/exit_record/exitRecord.csv)  
 - [insert_exit_record.py](Stage_A/data/python%20scripts/exit_record/insert_exit_record.py)
-- 
+  
 הערה: מכיוון שבבסיס הנתונים שלנו ישויות נבנות אחת על השנייה, יצרנו קודם כל את הנתונים של gym, שלא תלוי באף אחד, לאחר מכן של person, worker ו-member, ולאחר מכן את של zone, accessdevice, entry/exit record. גם את הנתונים עצמם ביססנו מישות חזקה ליישות החלשה שנתמכת בה, כך שהערכים בבסיס הנתונים יהיו הגיוניים ותואמים לעולם האמיתי
 ## גיבוי
 קובץ הגיבוי נשמר עם תאריך הגיבוי 
