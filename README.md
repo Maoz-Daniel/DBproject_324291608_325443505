@@ -72,11 +72,9 @@
 
 **2. הכנסת נתונים מקבצים**  
 כתבנו קוד בפייתון שיוצר דאטה עבור הסכמות של אזורים, מכשירי גישה ותיקון, כך שהסכמה של מכשירי הגישה נבנת על נתונים מהסכמה של אזורים (מכיוון שהמפתח של אזור הוא מפתח זר למכשיר גישה). העברנו את הנתונים לקובץ CSV, ואותו העלינו ישירות ל־Postgres.  
-[קובץ CSV של מכשירי גישה (accessDevice)](Stage_A/data/csv/accessDevice/accessDevice.csv)
-
-[קובץ CSV של תיקונים (repair)](Stage_A/data/csv/repair/repair.csv)
-
-[קובץ CSV של אזורים (zone)](Stage_A/data/csv/zone/zone.csv)
+- [קובץ CSV של מכשירי גישה (accessDevice)](Stage_A/data/csv/accessDevice/accessDevice.csv)
+- [קובץ CSV של תיקונים (repair)](Stage_A/data/csv/repair/repair.csv)
+- [קובץ CSV של אזורים (zone)](Stage_A/data/csv/zone/zone.csv)
 
 
 ![inserts](Stage_A/data/csv/insert_csv_device_repair_zone_gym.png)
