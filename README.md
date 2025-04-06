@@ -75,7 +75,6 @@
 - [קובץ מכשירי גישה (accessDevice.csv)](Stage_A\data\csv\accessDevice\accessDevice.csv)
 - [קובץ אזורים (zone.csv)](Stage_A\data\csv\zone\zone.csv)
 - [קובץ תיקונים (repair.csv)](Stage_A\data\csv\repair\repair.csv)
-- 
 ![inserts](Stage_A/data/csv/insert_csv_device_repair_zone.png)
 
 
@@ -88,8 +87,15 @@
 - [insert_repairs.sql](Stage_A/data/insert%20commands/insert_repairs.sql)
 
 **3. יצירת סקריפט בפייתון**  
-יצרנו נתונים בעזרת סקריפט פייתון לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
-[הוסף כאן קישור לסקריפט הפייתון ול־CSV שנוצר]
+יצרנו נתונים בעזרת סקריפט פייתון עבור רשומות הכניסה והיציאה, אותם העברנו לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
+### 🟢 רשומות כניסה (Entry Records)
 
+- [entryRecord.csv](Stage_A/data/python%20scripts/entry_record/entryRecord.csv)  
+- [insert_entry_record.py](Stage_A/data/python%20scripts/entry_record/insert_entry_record.py)
+
+### 🔴 רשומות יציאה (Exit Records)
+
+- [exitRecord.csv](Stage_A/data/python%20scripts/exit_record/exitRecord.csv)  
+- [insert_exit_record.py](Stage_A/data/python%20scripts/exit_record/insert_exit_record.py)
 ## גיבוי
 קובץ הגיבוי נשמר עם תאריך הגיבוי 
