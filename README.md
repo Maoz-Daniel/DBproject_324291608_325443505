@@ -83,9 +83,9 @@
 
 בנוסף, הכנסנו בצורה ידנית את פקודות ה־INSERT עבור מנויים, אנשים ועובדי תחזוקה.  
 #### 🔗 קישורים לקבצים:
-- [insert_devices.sql](Stage_A/data/insert%20commands/insert_devices.sql)
-- [insert_zones.sql](Stage_A/data/insert%20commands/insert_zones.sql)
-- [insert_repairs.sql](Stage_A/data/insert%20commands/insert_repairs.sql)
+- [insert_devices.sql](Stage_A/data/insert%20commands/insert_member_400_from_800 (1).sql)
+- [insert_zones.sql](Stage_A/data/insert%20commands/insert_person_800.sql.sql)
+- [insert_repairs.sql](Stage_A/data/insert%20commands/insert_worker_400_from_800.sql.sql)
 
 **3. יצירת סקריפט בפייתון**  
 יצרנו נתונים בעזרת סקריפט פייתון עבור רשומות הכניסה והיציאה, שמסתמך על נתונים ממכשירי גישה ואנשים (מכיוון שהמפתחות שלהם הם מפתחות זרים לרשומות). אותם העברנו לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
