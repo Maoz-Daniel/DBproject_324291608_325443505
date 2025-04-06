@@ -59,7 +59,7 @@
 - קובץ הכנסה לטבלאות: [insertTables.sql](Stage_A/scripts/insertTables.sql)
 - קובץ מחיקת הטבלאות: [dropTables.sql](Stage_A/scripts/dropTables.sql)
 - קובץ בחירת כל הטבלאות: [selectAll.sql](Stage_A/scripts/selectAll.sql)
-- 
+  
 ### אכלוס הנתונים
 אכלסנו את הנתונים ב־3 דרכים:
 
@@ -83,7 +83,7 @@
 
 בנוסף, הכנסנו בצורה ידנית את פקודות ה־INSERT עבור מנויים, אנשים ועובדי תחזוקה.  
 #### 🔗 קישורים לקבצים:
-- [insert_devices.sql](Stage_A/data/insert commands/insert_member_400_from_800 (1).sql)
+- [insert_member_400_from_800 (1).sql](Stage_A/data/insert%20commands/insert_member_400_from_800%20%281%29.sql)
 - [insert_zones.sql](Stage_A/data/insert%20commands/insert_person_800.sql)
 - [insert_repairs.sql](Stage_A/data/insert%20commands/insert_worker_400_from_800.sql)
 
