@@ -71,7 +71,7 @@
 [📄 הורדת קובץ ה־CSV – gym_400.csv](Stage_A/data/mockaroo/gym_400.csv)
 
 **2. הכנסת נתונים מקבצים**  
-כתבנו קוד בפייתון שיוצר דאטה עבור הסכמות של מכשירי גישה, אזורים ותיקון, ומעביר את הנתונים לקובץ CSV, אותו העלינו ישירות ל־Postgres.  
+כתבנו קוד בפייתון שיוצר דאטה עבור הסכמות של אזורים, מכשירי גישה ותיקון, כך שהסכמה של מכשירי הגישה נבנת על נתונים מהסכמה של אזורים (מכיוון שהמפתח של אזור הוא מפתח זר למכשיר גישה). העברנו את הנתונים לקובץ CSV, ואותו העלינו ישירות ל־Postgres.  
 - [קובץ מכשירי גישה (accessDevice.csv)](Stage_A\data\csv\accessDevice\accessDevice.csv)
 - [קובץ אזורים (zone.csv)](Stage_A\data\csv\zone\zone.csv)
 - [קובץ תיקונים (repair.csv)](Stage_A\data\csv\repair\repair.csv)
@@ -88,7 +88,7 @@
 - [insert_repairs.sql](Stage_A/data/insert%20commands/insert_repairs.sql)
 
 **3. יצירת סקריפט בפייתון**  
-יצרנו נתונים בעזרת סקריפט פייתון עבור רשומות הכניסה והיציאה, אותם העברנו לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
+יצרנו נתונים בעזרת סקריפט פייתון עבור רשומות הכניסה והיציאה, שמסתמך על נתונים ממכשירי גישה ואנשים (מכיוון שהמפתחות שלהם הם מפתחות זרים לרשומות). אותם העברנו לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
 ##### 🟢 רשומות כניסה (Entry Records)
 
 - [entryRecord.csv](Stage_A/data/python%20scripts/entry_record/entryRecord.csv)  
@@ -98,6 +98,8 @@
 
 - [exitRecord.csv](Stage_A/data/python%20scripts/exit_record/exitRecord.csv)  
 - [insert_exit_record.py](Stage_A/data/python%20scripts/exit_record/insert_exit_record.py)
+- 
+הערה: מכיוון שבבסיס הנתונים שלנו ישויות נבנות אחת על השנייה, יצרנו קודם כל את הנתונים של gym, שלא תלוי באף אחד, לאחר מכן של person, worker ו-member, ולאחר מכן את של zone, accessdevice, entry/exit record. גם את הנתונים עצמם ביססנו מישות חזקה ליישות החלשה שנתמכת בה, כך שהערכים בבסיס הנתונים יהיו הגיוניים ותואמים לעולם האמיתי
 ## גיבוי
 קובץ הגיבוי נשמר עם תאריך הגיבוי 
 
