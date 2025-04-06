@@ -1,0 +1,401 @@
+gymid,gymname,gymlocation
+1,StrengthStudio,Haifa
+2,FlexFrenzy,Acre
+3,PowerPulse,Tiberias
+4,SweatSquad,Herzliya
+5,FlexFlow,Haifa
+6,CoreCraze,Tel Aviv
+7,FitFury,Ashkelon
+8,StrengthStudio,Ashkelon
+9,SweatSizzle,Acre
+10,PeakPower,Tiberias
+11,SweatSculpt,Safed
+12,StrengthStrong,Haifa
+13,BodyBlast,Kfar Saba
+14,CoreCircuit,Haifa
+15,BodyBlast,Kfar Saba
+16,BodyBoost,Petah Tikva
+17,BodyBurn,Herzliya
+18,CardioCrush,Beersheba
+19,EliteEndurance,Beersheba
+20,CardioCore,Kfar Saba
+21,PeakPower,Herzliya
+22,IronGrip,Jerusalem
+23,CoreCircuit,Petah Tikva
+24,SweatSculpt,Tel Aviv
+25,FitFlex,Ashkelon
+26,PowerPlay,Eilat
+27,MuscleMania,Safed
+28,SweatStorm,Jerusalem
+29,StrengthStrong,Ashkelon
+30,CardioCrush,Jerusalem
+31,CoreCraze,Ramat Gan
+32,FlexFrenzy,Kfar Saba
+33,FitFusion,Bat Yam
+34,PeakPulse,Rishon LeZion
+35,BodyBlast,Netanya
+36,PowerPump,Acre
+37,PeakPulse,Petah Tikva
+38,IronGrip,Safed
+39,FlexFitness,Beersheba
+40,StrengthZone,Netanya
+41,CardioCraze,Ashdod
+42,CoreCrush,Haifa
+43,MuscleMagic,Eilat
+44,GymRat,Netanya
+45,PeakPerformance,Tiberias
+46,FitForce,Ashdod
+47,IronIntensity,Netanya
+48,BodyBalance,Beersheba
+49,EliteEnergy,Modi'in
+50,GymGains,Jerusalem
+51,FitFusion,Haifa
+52,SweatSculpt,Jerusalem
+53,MuscleMagic,Acre
+54,CoreCircuit,Bat Yam
+55,BodyBurn,Eilat
+56,PowerPump,Eilat
+57,GymGlory,Tiberias
+58,BodyBurn,Netanya
+59,CardioCrush,Modi'in
+60,IronGrip,Kfar Saba
+61,CardioCore,Eilat
+62,PeakPower,Nahariya
+63,FitFury,Safed
+64,SweatStorm,Nahariya
+65,PowerPump,Jerusalem
+66,FlexFlow,Bat Yam
+67,PowerPulse,Beersheba
+68,EnduranceEdge,Herzliya
+69,EliteEssence,Ramat Gan
+70,BodyBalance,Ashdod
+71,EliteEnergy,Tel Aviv
+72,FlexFit,Tel Aviv
+73,PowerPulse,Netanya
+74,IronIntensity,Holon
+75,BodyBalance,Modi'in
+76,SweatWorks,Kfar Saba
+77,PeakPulse,Tiberias
+78,FlexFrenzy,Bat Yam
+79,MuscleMania,Haifa
+80,SweatSculpt,Holon
+81,SweatStorm,Tel Aviv
+82,StrengthStudio,Nahariya
+83,CoreCircuit,Modi'in
+84,PowerPump,Tel Aviv
+85,PeakPerformance,Haifa
+86,StrengthZone,Acre
+87,FlexFrenzy,Netanya
+88,FitForce,Petah Tikva
+89,IronImpact,Ramat Gan
+90,IronImpact,Holon
+91,EnduranceElite,Ashkelon
+92,CoreCircuit,Petah Tikva
+93,SweatSculpt,Herzliya
+94,CoreCircuit,Herzliya
+95,CoreCircuit,Bat Yam
+96,BodyBalance,Ashdod
+97,EnduranceElite,Tiberias
+98,MuscleMania,Tel Aviv
+99,FlexFlow,Tiberias
+100,FitForm,Kfar Saba
+101,CardioCrush,Tel Aviv
+102,SweatSculpt,Nahariya
+103,BodyBlast,Petah Tikva
+104,FlexFit,Eilat
+105,BodyBalance,Jerusalem
+106,IronIntensity,Nahariya
+107,FlexFitness,Ramat Gan
+108,FitZone,Ashdod
+109,EnduranceEmpire,Bat Yam
+110,EliteEssence,Bat Yam
+111,EliteEndurance,Rishon LeZion
+112,SweatSculpt,Tel Aviv
+113,EliteEnergy,Tel Aviv
+114,EliteEssence,Jerusalem
+115,CardioCrush,Ashdod
+116,FlexFit,Ramat Gan
+117,EnduranceEdge,Beersheba
+118,CoreCrush,Nahariya
+119,FlexFlow,Tiberias
+120,BodyBoost,Kfar Saba
+121,PowerPump,Holon
+122,BodyBurn,Jerusalem
+123,BodyBlast,Jerusalem
+124,CardioCore,Beersheba
+125,FitForce,Beersheba
+126,BodyBalance,Jerusalem
+127,FitFusion,Ashkelon
+128,SweatStorm,Holon
+129,MuscleMania,Beersheba
+130,CardioCrush,Jerusalem
+131,IronGrip,Ashdod
+132,FlexFrenzy,Ramat Gan
+133,IronStrong,Ashdod
+134,PowerPlay,Jerusalem
+135,BodyBlast,Haifa
+136,FitFury,Safed
+137,FlexFit,Nahariya
+138,SweatSculpt,Modi'in
+139,PeakPerformance,Nahariya
+140,PeakPower,Acre
+141,SweatSquad,Haifa
+142,FlexFit,Tel Aviv
+143,FlexFlow,Nahariya
+144,IronGrip,Safed
+145,EnduranceEdge,Holon
+146,EnduranceEmpire,Jerusalem
+147,CardioCore,Haifa
+148,EliteEssence,Ramat Gan
+149,FitForce,Holon
+150,FitForm,Ashdod
+151,MuscleMania,Bat Yam
+152,CoreCrush,Holon
+153,BodyBlast,Ashdod
+154,EliteEnergy,Holon
+155,EnduranceElite,Eilat
+156,EnduranceEmpire,Kfar Saba
+157,FitFusion,Holon
+158,EliteEnergy,Acre
+159,FitForm,Tiberias
+160,PeakPerformance,Modi'in
+161,FitFusion,Jerusalem
+162,PowerPlay,Rishon LeZion
+163,GymGlory,Herzliya
+164,EliteEssence,Ashdod
+165,CoreCrush,Kfar Saba
+166,PowerPulse,Nahariya
+167,EnduranceEmpire,Ashdod
+168,EnduranceElite,Holon
+169,BodyBalance,Kfar Saba
+170,IronStrong,Tel Aviv
+171,EliteEndurance,Tiberias
+172,StrengthZone,Bat Yam
+173,IronStrong,Bat Yam
+174,SweatSizzle,Kfar Saba
+175,BodyBurn,Bat Yam
+176,SweatSizzle,Beersheba
+177,SweatStorm,Netanya
+178,EliteEnergy,Holon
+179,CoreCraze,Tiberias
+180,BodyBoost,Acre
+181,BodyBlast,Bat Yam
+182,PowerPump,Rishon LeZion
+183,SweatSquad,Rishon LeZion
+184,FitForce,Ramat Gan
+185,BodyBoost,Netanya
+186,GymGlory,Eilat
+187,FlexFitness,Rishon LeZion
+188,PowerPulse,Modi'in
+189,FitForce,Tiberias
+190,FlexFlow,Kfar Saba
+191,PowerPlay,Ashdod
+192,FitFlex,Kfar Saba
+193,BodyBurn,Bat Yam
+194,GymGlory,Kfar Saba
+195,FitFury,Ramat Gan
+196,GymRat,Jerusalem
+197,BodyBurn,Kfar Saba
+198,IronImpact,Safed
+199,CoreCircuit,Acre
+200,FitFusion,Beersheba
+201,GymRat,Modi'in
+202,PowerPump,Bat Yam
+203,SweatSculpt,Holon
+204,EnduranceEmpire,Ashkelon
+205,BodyBurn,Bat Yam
+206,FlexFitness,Jerusalem
+207,SweatSquad,Jerusalem
+208,SweatSquad,Beersheba
+209,IronIntensity,Jerusalem
+210,PeakPulse,Ashdod
+211,FitForm,Nahariya
+212,BodyBlast,Tiberias
+213,StrengthStrong,Kfar Saba
+214,PeakPerformance,Petah Tikva
+215,GymGlory,Jerusalem
+216,FlexFlow,Petah Tikva
+217,GymRat,Ramat Gan
+218,EnduranceEdge,Kfar Saba
+219,FitZone,Beersheba
+220,SweatSizzle,Jerusalem
+221,EnduranceElite,Tiberias
+222,FitFusion,Beersheba
+223,BodyBurn,Tel Aviv
+224,EliteEndurance,Rishon LeZion
+225,PowerPlay,Tiberias
+226,GymRat,Bat Yam
+227,StrengthStrong,Ashkelon
+228,PowerPlay,Tiberias
+229,FitForm,Herzliya
+230,EliteEssence,Ashdod
+231,CoreCircuit,Petah Tikva
+232,MuscleMania,Ramat Gan
+233,FlexFit,Beersheba
+234,FlexFrenzy,Modi'in
+235,EliteEndurance,Ramat Gan
+236,IronGrip,Petah Tikva
+237,MuscleMagic,Ashkelon
+238,StrengthStudio,Holon
+239,CardioCraze,Modi'in
+240,CoreCrush,Bat Yam
+241,EnduranceElite,Herzliya
+242,IronGrip,Nahariya
+243,IronIntensity,Tiberias
+244,SweatShred,Beersheba
+245,CoreCrush,Beersheba
+246,StrengthZone,Jerusalem
+247,CoreCraze,Netanya
+248,EnduranceEmpire,Kfar Saba
+249,FlexFlow,Herzliya
+250,GymGlory,Netanya
+251,PeakPower,Ashdod
+252,CardioCraze,Nahariya
+253,GymGains,Jerusalem
+254,CardioCraze,Eilat
+255,MuscleMagic,Acre
+256,FitFlex,Rishon LeZion
+257,EnduranceEmpire,Ashdod
+258,FitForce,Modi'in
+259,IronIntensity,Ashdod
+260,IronIntensity,Ashdod
+261,StrengthZone,Jerusalem
+262,IronIntensity,Netanya
+263,BodyBurn,Tel Aviv
+264,CoreCrush,Safed
+265,CardioCore,Haifa
+266,MuscleMagic,Rishon LeZion
+267,SweatStorm,Eilat
+268,EnduranceEmpire,Ramat Gan
+269,EnduranceEmpire,Ashdod
+270,FitFusion,Holon
+271,FlexFit,Petah Tikva
+272,FlexFrenzy,Modi'in
+273,FlexFlow,Herzliya
+274,EnduranceEdge,Ashkelon
+275,PeakPower,Kfar Saba
+276,CardioCrush,Eilat
+277,GymGlory,Tel Aviv
+278,PeakPerformance,Herzliya
+279,StrengthStudio,Safed
+280,StrengthStudio,Petah Tikva
+281,SweatSculpt,Ashkelon
+282,EnduranceEmpire,Modi'in
+283,EliteEssence,Acre
+284,IronGrip,Safed
+285,BodyBalance,Beersheba
+286,GymGains,Tiberias
+287,BodyBoost,Acre
+288,BodyBalance,Haifa
+289,SweatShred,Ashkelon
+290,FlexFit,Bat Yam
+291,BodyBlast,Petah Tikva
+292,SweatWorks,Modi'in
+293,MuscleMax,Nahariya
+294,FlexFit,Rishon LeZion
+295,FitFury,Bat Yam
+296,FitFlex,Rishon LeZion
+297,FitFury,Netanya
+298,EliteEnergy,Ashkelon
+299,PeakPerformance,Acre
+300,FitFusion,Beersheba
+301,GymRat,Petah Tikva
+302,PeakPerformance,Netanya
+303,SweatSquad,Holon
+304,FitFlex,Rishon LeZion
+305,SweatStorm,Acre
+306,GymRat,Ashkelon
+307,EliteEndurance,Rishon LeZion
+308,FlexFit,Ashkelon
+309,GymGains,Rishon LeZion
+310,StrengthStrong,Eilat
+311,FlexFlow,Holon
+312,FitZone,Holon
+313,SweatSquad,Kfar Saba
+314,GymGlory,Ramat Gan
+315,CardioCraze,Tiberias
+316,CoreCircuit,Petah Tikva
+317,FitForce,Jerusalem
+318,SweatSculpt,Modi'in
+319,IronGrip,Nahariya
+320,BodyBalance,Herzliya
+321,BodyBlast,Bat Yam
+322,MuscleMania,Modi'in
+323,StrengthStudio,Ramat Gan
+324,EliteEssence,Eilat
+325,StrengthStrong,Holon
+326,SweatSquad,Haifa
+327,FlexFlow,Safed
+328,PeakPerformance,Ashdod
+329,GymRat,Nahariya
+330,SweatStorm,Ashkelon
+331,EnduranceElite,Holon
+332,FlexFlow,Eilat
+333,PowerPlay,Haifa
+334,PowerPlay,Bat Yam
+335,MuscleMax,Eilat
+336,PowerPump,Jerusalem
+337,IronImpact,Tel Aviv
+338,SweatStorm,Holon
+339,SweatShred,Eilat
+340,PowerPump,Jerusalem
+341,BodyBoost,Haifa
+342,SweatStorm,Beersheba
+343,MuscleMax,Rishon LeZion
+344,IronStrong,Haifa
+345,PeakPerformance,Beersheba
+346,CardioCraze,Modi'in
+347,StrengthZone,Rishon LeZion
+348,FlexFitness,Ramat Gan
+349,CardioCrush,Modi'in
+350,CoreCircuit,Safed
+351,IronGrip,Netanya
+352,StrengthStrong,Nahariya
+353,SweatShred,Petah Tikva
+354,EnduranceEdge,Eilat
+355,SweatStorm,Kfar Saba
+356,FitFusion,Netanya
+357,EnduranceElite,Holon
+358,SweatShred,Safed
+359,FitForm,Bat Yam
+360,FitFury,Rishon LeZion
+361,CardioCore,Holon
+362,SweatSculpt,Ashdod
+363,EnduranceElite,Jerusalem
+364,BodyBlast,Kfar Saba
+365,SweatSculpt,Jerusalem
+366,PeakPower,Nahariya
+367,FlexFrenzy,Acre
+368,PeakPower,Ramat Gan
+369,PeakPower,Ashkelon
+370,IronIntensity,Tiberias
+371,CardioCore,Safed
+372,BodyBlast,Beersheba
+373,PowerPulse,Holon
+374,IronIntensity,Rishon LeZion
+375,SweatSculpt,Herzliya
+376,SweatWorks,Haifa
+377,EliteEndurance,Petah Tikva
+378,IronImpact,Haifa
+379,PowerPump,Holon
+380,SweatShred,Herzliya
+381,EliteEssence,Jerusalem
+382,PowerPump,Ashkelon
+383,SweatSculpt,Ramat Gan
+384,BodyBoost,Beersheba
+385,IronStrong,Herzliya
+386,SweatSquad,Nahariya
+387,BodyBlast,Jerusalem
+388,FlexFitness,Beersheba
+389,CoreCraze,Herzliya
+390,EliteEndurance,Ashdod
+391,FitFusion,Safed
+392,FlexFit,Nahariya
+393,EliteEnergy,Tiberias
+394,SweatSquad,Safed
+395,BodyBlast,Haifa
+396,GymRat,Modi'in
+397,FlexFit,Beersheba
+398,IronGrip,Holon
+399,BodyBoost,Ashdod
+400,BodyBlast,Ramat Gan

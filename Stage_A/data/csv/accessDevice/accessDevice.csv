@@ -1,0 +1,1487 @@
+deviceID,zoneID,gymID,deviceType
+1,10,214,Card Reader
+2,10,214,Barcode Scanner
+3,10,214,QR Code Scanner
+4,2,139,Keypad Access
+5,2,139,Keypad Access
+6,5,250,NFC Reader
+7,5,250,Turnstile
+8,5,250,Turnstile
+9,5,186,NFC Reader
+10,5,186,Card Reader
+11,4,284,Barcode Scanner
+12,4,284,Card Reader
+13,8,310,Barcode Scanner
+14,8,310,Mobile App Scanner
+15,8,310,Keypad Access
+16,8,105,Facial Recognition
+17,8,105,Keypad Access
+18,8,194,Keypad Access
+19,8,194,Facial Recognition
+20,8,194,Gate Access
+21,3,67,NFC Reader
+22,3,67,Gate Access
+23,4,12,Barcode Scanner
+24,4,12,NFC Reader
+25,3,212,Mobile App Scanner
+26,3,212,Card Reader
+27,1,105,Gate Access
+28,1,105,QR Code Scanner
+29,1,105,Gate Access
+30,3,104,Keypad Access
+31,3,104,Facial Recognition
+32,3,104,NFC Reader
+33,5,263,NFC Reader
+34,5,263,NFC Reader
+35,10,308,Barcode Scanner
+36,10,308,Facial Recognition
+37,10,308,NFC Reader
+38,2,397,QR Code Scanner
+39,2,397,Gate Access
+40,3,251,Turnstile
+41,3,251,Turnstile
+42,9,61,Mobile App Scanner
+43,9,61,NFC Reader
+44,2,122,Mobile App Scanner
+45,2,122,NFC Reader
+46,1,76,Mobile App Scanner
+47,1,76,Card Reader
+48,5,288,Turnstile
+49,5,288,Gate Access
+50,5,288,Gate Access
+51,8,64,Mobile App Scanner
+52,8,64,Fingerprint Scanner
+53,2,209,Mobile App Scanner
+54,2,209,NFC Reader
+55,2,209,Barcode Scanner
+56,1,176,Keypad Access
+57,1,176,Mobile App Scanner
+58,1,176,Turnstile
+59,6,288,Gate Access
+60,6,288,Fingerprint Scanner
+61,10,346,Barcode Scanner
+62,10,346,Facial Recognition
+63,10,346,Gate Access
+64,5,364,Facial Recognition
+65,5,364,Barcode Scanner
+66,10,391,Gate Access
+67,10,391,Mobile App Scanner
+68,2,90,Barcode Scanner
+69,2,90,Mobile App Scanner
+70,2,90,QR Code Scanner
+71,8,394,Gate Access
+72,8,394,Facial Recognition
+73,8,394,Gate Access
+74,6,32,Facial Recognition
+75,6,32,Facial Recognition
+76,5,120,Barcode Scanner
+77,5,120,Gate Access
+78,5,120,Card Reader
+79,3,282,Mobile App Scanner
+80,3,282,Mobile App Scanner
+81,3,282,Gate Access
+82,4,292,Mobile App Scanner
+83,4,292,Facial Recognition
+84,3,248,Fingerprint Scanner
+85,3,248,Keypad Access
+86,8,5,Turnstile
+87,8,5,Gate Access
+88,5,44,Fingerprint Scanner
+89,5,44,Gate Access
+90,7,98,NFC Reader
+91,7,98,Keypad Access
+92,7,98,Card Reader
+93,5,340,Facial Recognition
+94,5,340,QR Code Scanner
+95,9,125,Facial Recognition
+96,9,125,Keypad Access
+97,9,125,Facial Recognition
+98,1,242,Card Reader
+99,1,242,Fingerprint Scanner
+100,1,242,QR Code Scanner
+101,6,10,Fingerprint Scanner
+102,6,10,Gate Access
+103,8,178,Facial Recognition
+104,8,178,Facial Recognition
+105,9,177,Mobile App Scanner
+106,9,177,Mobile App Scanner
+107,9,177,NFC Reader
+108,1,33,QR Code Scanner
+109,1,33,NFC Reader
+110,1,33,NFC Reader
+111,6,397,NFC Reader
+112,6,397,Keypad Access
+113,7,144,Mobile App Scanner
+114,7,144,NFC Reader
+115,7,144,Fingerprint Scanner
+116,6,214,Keypad Access
+117,6,214,Fingerprint Scanner
+118,6,214,Barcode Scanner
+119,1,239,Card Reader
+120,1,239,Barcode Scanner
+121,3,35,Mobile App Scanner
+122,3,35,Fingerprint Scanner
+123,6,384,QR Code Scanner
+124,6,384,Card Reader
+125,10,166,Turnstile
+126,10,166,Keypad Access
+127,10,166,Turnstile
+128,6,48,Mobile App Scanner
+129,6,48,Barcode Scanner
+130,6,48,Barcode Scanner
+131,5,327,NFC Reader
+132,5,327,Keypad Access
+133,5,327,QR Code Scanner
+134,6,158,NFC Reader
+135,6,158,Fingerprint Scanner
+136,2,32,Facial Recognition
+137,2,32,Keypad Access
+138,2,32,NFC Reader
+139,2,284,Card Reader
+140,2,284,Gate Access
+141,2,284,Turnstile
+142,5,379,Card Reader
+143,5,379,Mobile App Scanner
+144,5,379,Keypad Access
+145,10,118,Keypad Access
+146,10,118,Card Reader
+147,10,118,Fingerprint Scanner
+148,1,19,Fingerprint Scanner
+149,1,19,Card Reader
+150,1,19,Turnstile
+151,5,392,Card Reader
+152,5,392,Keypad Access
+153,5,392,QR Code Scanner
+154,6,279,Card Reader
+155,6,279,Gate Access
+156,6,279,Keypad Access
+157,3,211,Gate Access
+158,3,211,QR Code Scanner
+159,3,211,Mobile App Scanner
+160,1,212,NFC Reader
+161,1,212,Gate Access
+162,1,158,Facial Recognition
+163,1,158,Gate Access
+164,8,248,NFC Reader
+165,8,248,QR Code Scanner
+166,8,248,Barcode Scanner
+167,3,170,Card Reader
+168,3,170,QR Code Scanner
+169,3,170,Card Reader
+170,8,32,Mobile App Scanner
+171,8,32,Fingerprint Scanner
+172,8,32,QR Code Scanner
+173,2,56,Facial Recognition
+174,2,56,Card Reader
+175,2,56,Keypad Access
+176,2,51,Card Reader
+177,2,51,Card Reader
+178,3,61,NFC Reader
+179,3,61,NFC Reader
+180,4,151,Gate Access
+181,4,151,NFC Reader
+182,2,280,Gate Access
+183,2,280,Facial Recognition
+184,8,321,QR Code Scanner
+185,8,321,Barcode Scanner
+186,8,321,QR Code Scanner
+187,6,112,QR Code Scanner
+188,6,112,NFC Reader
+189,8,169,Barcode Scanner
+190,8,169,Fingerprint Scanner
+191,8,169,Turnstile
+192,7,274,Gate Access
+193,7,274,Barcode Scanner
+194,5,371,Fingerprint Scanner
+195,5,371,Card Reader
+196,5,371,Facial Recognition
+197,3,60,NFC Reader
+198,3,60,Mobile App Scanner
+199,3,60,Turnstile
+200,4,49,Keypad Access
+201,4,49,Fingerprint Scanner
+202,4,49,Mobile App Scanner
+203,2,107,Card Reader
+204,2,107,NFC Reader
+205,2,107,Turnstile
+206,7,262,Barcode Scanner
+207,7,262,Turnstile
+208,4,62,Facial Recognition
+209,4,62,Facial Recognition
+210,10,50,Gate Access
+211,10,50,Barcode Scanner
+212,10,50,QR Code Scanner
+213,1,289,Barcode Scanner
+214,1,289,Turnstile
+215,1,289,Mobile App Scanner
+216,5,353,Turnstile
+217,5,353,Facial Recognition
+218,5,215,Facial Recognition
+219,5,215,Facial Recognition
+220,5,224,Barcode Scanner
+221,5,224,Card Reader
+222,5,224,Mobile App Scanner
+223,2,290,Barcode Scanner
+224,2,290,Mobile App Scanner
+225,9,306,Keypad Access
+226,9,306,NFC Reader
+227,2,134,Barcode Scanner
+228,2,134,Fingerprint Scanner
+229,2,134,Keypad Access
+230,7,316,Gate Access
+231,7,316,Mobile App Scanner
+232,7,316,Card Reader
+233,3,143,NFC Reader
+234,3,143,Keypad Access
+235,8,195,QR Code Scanner
+236,8,195,Facial Recognition
+237,10,299,Turnstile
+238,10,299,Gate Access
+239,10,299,Keypad Access
+240,5,15,QR Code Scanner
+241,5,15,Card Reader
+242,10,246,Keypad Access
+243,10,246,Gate Access
+244,10,246,Facial Recognition
+245,2,326,Card Reader
+246,2,326,Facial Recognition
+247,2,326,Mobile App Scanner
+248,1,152,Fingerprint Scanner
+249,1,152,Facial Recognition
+250,1,152,Turnstile
+251,1,257,Barcode Scanner
+252,1,257,NFC Reader
+253,7,165,Mobile App Scanner
+254,7,165,NFC Reader
+255,4,177,Barcode Scanner
+256,4,177,Keypad Access
+257,4,177,Turnstile
+258,9,202,Card Reader
+259,9,202,QR Code Scanner
+260,8,308,Fingerprint Scanner
+261,8,308,Mobile App Scanner
+262,1,52,NFC Reader
+263,1,52,Facial Recognition
+264,3,253,Card Reader
+265,3,253,NFC Reader
+266,3,253,NFC Reader
+267,3,17,Turnstile
+268,3,17,Barcode Scanner
+269,3,17,Fingerprint Scanner
+270,8,324,QR Code Scanner
+271,8,324,Turnstile
+272,2,244,Keypad Access
+273,2,244,Card Reader
+274,2,244,Card Reader
+275,2,14,QR Code Scanner
+276,2,14,Mobile App Scanner
+277,2,14,Card Reader
+278,9,291,NFC Reader
+279,9,291,Gate Access
+280,8,350,Card Reader
+281,8,350,Barcode Scanner
+282,8,350,Turnstile
+283,3,246,Fingerprint Scanner
+284,3,246,Facial Recognition
+285,3,246,Card Reader
+286,1,16,Gate Access
+287,1,16,Fingerprint Scanner
+288,6,309,Gate Access
+289,6,309,Facial Recognition
+290,8,184,Fingerprint Scanner
+291,8,184,Facial Recognition
+292,5,301,Turnstile
+293,5,301,QR Code Scanner
+294,5,301,NFC Reader
+295,5,328,NFC Reader
+296,5,328,Mobile App Scanner
+297,5,328,Card Reader
+298,10,254,Mobile App Scanner
+299,10,254,Keypad Access
+300,10,254,Barcode Scanner
+301,9,209,Facial Recognition
+302,9,209,Turnstile
+303,2,353,Keypad Access
+304,2,353,Turnstile
+305,5,192,Keypad Access
+306,5,192,QR Code Scanner
+307,5,192,Facial Recognition
+308,6,352,NFC Reader
+309,6,352,Mobile App Scanner
+310,5,339,Facial Recognition
+311,5,339,Turnstile
+312,5,339,NFC Reader
+313,6,155,Mobile App Scanner
+314,6,155,Fingerprint Scanner
+315,3,42,Turnstile
+316,3,42,Mobile App Scanner
+317,3,42,Gate Access
+318,1,332,Fingerprint Scanner
+319,1,332,Turnstile
+320,8,313,QR Code Scanner
+321,8,313,Gate Access
+322,8,313,Card Reader
+323,8,386,Barcode Scanner
+324,8,386,QR Code Scanner
+325,7,346,Fingerprint Scanner
+326,7,346,Facial Recognition
+327,5,279,Mobile App Scanner
+328,5,279,Turnstile
+329,7,92,QR Code Scanner
+330,7,92,Fingerprint Scanner
+331,5,229,NFC Reader
+332,5,229,Gate Access
+333,6,1,Mobile App Scanner
+334,6,1,Facial Recognition
+335,6,1,Gate Access
+336,6,311,Turnstile
+337,6,311,Fingerprint Scanner
+338,6,311,Card Reader
+339,8,380,Barcode Scanner
+340,8,380,Keypad Access
+341,5,35,Fingerprint Scanner
+342,5,35,QR Code Scanner
+343,5,35,Gate Access
+344,5,299,Fingerprint Scanner
+345,5,299,Mobile App Scanner
+346,5,299,Turnstile
+347,7,370,Fingerprint Scanner
+348,7,370,Facial Recognition
+349,7,370,Gate Access
+350,4,58,Turnstile
+351,4,58,Turnstile
+352,4,58,Barcode Scanner
+353,6,297,NFC Reader
+354,6,297,Turnstile
+355,3,161,Mobile App Scanner
+356,3,161,Mobile App Scanner
+357,3,161,Mobile App Scanner
+358,6,63,Facial Recognition
+359,6,63,Facial Recognition
+360,5,398,Keypad Access
+361,5,398,QR Code Scanner
+362,5,398,Barcode Scanner
+363,6,76,Keypad Access
+364,6,76,Turnstile
+365,6,76,QR Code Scanner
+366,1,14,Gate Access
+367,1,14,Turnstile
+368,1,14,QR Code Scanner
+369,9,39,Turnstile
+370,9,39,Card Reader
+371,7,293,Mobile App Scanner
+372,7,293,Barcode Scanner
+373,7,293,Mobile App Scanner
+374,5,196,Barcode Scanner
+375,5,196,NFC Reader
+376,5,214,Keypad Access
+377,5,214,Keypad Access
+378,5,214,Mobile App Scanner
+379,8,318,Card Reader
+380,8,318,NFC Reader
+381,8,318,Keypad Access
+382,8,280,QR Code Scanner
+383,8,280,Keypad Access
+384,8,280,Card Reader
+385,1,45,Card Reader
+386,1,45,Gate Access
+387,1,45,Facial Recognition
+388,5,173,Turnstile
+389,5,173,Turnstile
+390,5,173,Fingerprint Scanner
+391,8,82,Card Reader
+392,8,82,NFC Reader
+393,8,82,QR Code Scanner
+394,10,324,Fingerprint Scanner
+395,10,324,Turnstile
+396,6,340,Card Reader
+397,6,340,NFC Reader
+398,5,90,QR Code Scanner
+399,5,90,Card Reader
+400,4,93,Fingerprint Scanner
+401,4,93,Gate Access
+402,9,90,QR Code Scanner
+403,9,90,NFC Reader
+404,9,90,Mobile App Scanner
+405,2,361,Mobile App Scanner
+406,2,361,Keypad Access
+407,2,361,Card Reader
+408,2,39,Turnstile
+409,2,39,Gate Access
+410,3,389,Keypad Access
+411,3,389,Turnstile
+412,3,389,Facial Recognition
+413,2,25,Turnstile
+414,2,25,Card Reader
+415,8,6,Card Reader
+416,8,6,Fingerprint Scanner
+417,8,6,Keypad Access
+418,3,287,QR Code Scanner
+419,3,287,Mobile App Scanner
+420,3,287,Barcode Scanner
+421,5,95,NFC Reader
+422,5,95,Card Reader
+423,7,140,Keypad Access
+424,7,140,Card Reader
+425,10,208,Barcode Scanner
+426,10,208,Mobile App Scanner
+427,6,379,Fingerprint Scanner
+428,6,379,QR Code Scanner
+429,7,231,Card Reader
+430,7,231,QR Code Scanner
+431,7,231,QR Code Scanner
+432,2,393,QR Code Scanner
+433,2,393,Gate Access
+434,10,329,Mobile App Scanner
+435,10,329,Barcode Scanner
+436,10,329,QR Code Scanner
+437,7,278,Barcode Scanner
+438,7,278,Keypad Access
+439,7,278,Barcode Scanner
+440,10,5,QR Code Scanner
+441,10,5,QR Code Scanner
+442,4,288,QR Code Scanner
+443,4,288,Card Reader
+444,3,357,Facial Recognition
+445,3,357,Facial Recognition
+446,3,171,NFC Reader
+447,3,171,QR Code Scanner
+448,7,347,QR Code Scanner
+449,7,347,Gate Access
+450,1,160,Mobile App Scanner
+451,1,160,Gate Access
+452,7,221,Keypad Access
+453,7,221,NFC Reader
+454,8,375,Facial Recognition
+455,8,375,Fingerprint Scanner
+456,1,229,Facial Recognition
+457,1,229,Turnstile
+458,2,48,Fingerprint Scanner
+459,2,48,Facial Recognition
+460,2,48,Fingerprint Scanner
+461,9,60,Gate Access
+462,9,60,Barcode Scanner
+463,9,60,Barcode Scanner
+464,6,208,QR Code Scanner
+465,6,208,NFC Reader
+466,5,189,Card Reader
+467,5,189,Gate Access
+468,5,360,Keypad Access
+469,5,360,Facial Recognition
+470,10,52,Fingerprint Scanner
+471,10,52,NFC Reader
+472,7,196,Gate Access
+473,7,196,Barcode Scanner
+474,5,144,Mobile App Scanner
+475,5,144,Turnstile
+476,4,163,Fingerprint Scanner
+477,4,163,Keypad Access
+478,4,163,NFC Reader
+479,7,105,Barcode Scanner
+480,7,105,Fingerprint Scanner
+481,5,55,NFC Reader
+482,5,55,Gate Access
+483,5,55,Gate Access
+484,3,157,Gate Access
+485,3,157,Barcode Scanner
+486,3,157,Facial Recognition
+487,4,146,Gate Access
+488,4,146,QR Code Scanner
+489,4,101,Gate Access
+490,4,101,NFC Reader
+491,3,102,Facial Recognition
+492,3,102,Turnstile
+493,3,206,QR Code Scanner
+494,3,206,Turnstile
+495,10,70,QR Code Scanner
+496,10,70,Gate Access
+497,10,70,Facial Recognition
+498,2,83,Fingerprint Scanner
+499,2,83,Gate Access
+500,2,83,Keypad Access
+501,10,16,Card Reader
+502,10,16,Keypad Access
+503,5,68,Turnstile
+504,5,68,Mobile App Scanner
+505,10,355,Turnstile
+506,10,355,Fingerprint Scanner
+507,10,355,Fingerprint Scanner
+508,3,226,Card Reader
+509,3,226,Facial Recognition
+510,6,33,Card Reader
+511,6,33,Turnstile
+512,6,33,Turnstile
+513,6,78,Turnstile
+514,6,78,QR Code Scanner
+515,6,363,Gate Access
+516,6,363,Card Reader
+517,8,127,NFC Reader
+518,8,127,QR Code Scanner
+519,7,186,NFC Reader
+520,7,186,Gate Access
+521,8,97,Facial Recognition
+522,8,97,Fingerprint Scanner
+523,8,97,Gate Access
+524,8,155,Card Reader
+525,8,155,Keypad Access
+526,8,155,QR Code Scanner
+527,8,378,Barcode Scanner
+528,8,378,Keypad Access
+529,8,378,QR Code Scanner
+530,10,222,Turnstile
+531,10,222,Facial Recognition
+532,10,222,Turnstile
+533,5,312,Turnstile
+534,5,312,Mobile App Scanner
+535,5,312,QR Code Scanner
+536,3,75,Card Reader
+537,3,75,Gate Access
+538,9,184,Mobile App Scanner
+539,9,184,Barcode Scanner
+540,10,385,Keypad Access
+541,10,385,Gate Access
+542,10,385,Facial Recognition
+543,5,167,NFC Reader
+544,5,167,Card Reader
+545,7,198,Facial Recognition
+546,7,198,QR Code Scanner
+547,1,104,Facial Recognition
+548,1,104,Turnstile
+549,8,81,QR Code Scanner
+550,8,81,Mobile App Scanner
+551,8,81,NFC Reader
+552,2,34,Barcode Scanner
+553,2,34,Facial Recognition
+554,8,148,Gate Access
+555,8,148,Barcode Scanner
+556,4,338,Card Reader
+557,4,338,Barcode Scanner
+558,4,338,Mobile App Scanner
+559,10,150,Fingerprint Scanner
+560,10,150,Barcode Scanner
+561,7,286,Keypad Access
+562,7,286,Keypad Access
+563,2,188,Mobile App Scanner
+564,2,188,Keypad Access
+565,7,43,Turnstile
+566,7,43,Gate Access
+567,2,171,Mobile App Scanner
+568,2,171,NFC Reader
+569,6,163,Turnstile
+570,6,163,Keypad Access
+571,6,163,Turnstile
+572,1,270,NFC Reader
+573,1,270,Fingerprint Scanner
+574,7,213,Turnstile
+575,7,213,Barcode Scanner
+576,7,213,Mobile App Scanner
+577,7,312,NFC Reader
+578,7,312,Mobile App Scanner
+579,9,41,Fingerprint Scanner
+580,9,41,QR Code Scanner
+581,2,338,Keypad Access
+582,2,338,Fingerprint Scanner
+583,2,338,Gate Access
+584,3,384,Keypad Access
+585,3,384,Facial Recognition
+586,3,384,Card Reader
+587,10,312,Fingerprint Scanner
+588,10,312,Gate Access
+589,10,312,Barcode Scanner
+590,1,324,Fingerprint Scanner
+591,1,324,Fingerprint Scanner
+592,1,324,Barcode Scanner
+593,3,242,Fingerprint Scanner
+594,3,242,Facial Recognition
+595,5,124,NFC Reader
+596,5,124,Turnstile
+597,1,197,Barcode Scanner
+598,1,197,Card Reader
+599,1,197,Keypad Access
+600,8,305,QR Code Scanner
+601,8,305,Card Reader
+602,2,204,Barcode Scanner
+603,2,204,Gate Access
+604,5,387,QR Code Scanner
+605,5,387,Turnstile
+606,7,325,Keypad Access
+607,7,325,Mobile App Scanner
+608,5,41,QR Code Scanner
+609,5,41,Facial Recognition
+610,5,41,NFC Reader
+611,1,228,Turnstile
+612,1,228,Barcode Scanner
+613,9,156,Turnstile
+614,9,156,Mobile App Scanner
+615,9,156,Keypad Access
+616,9,334,Barcode Scanner
+617,9,334,NFC Reader
+618,9,334,QR Code Scanner
+619,10,27,Mobile App Scanner
+620,10,27,Turnstile
+621,10,27,Card Reader
+622,8,102,QR Code Scanner
+623,8,102,NFC Reader
+624,8,102,Turnstile
+625,5,254,Card Reader
+626,5,254,Barcode Scanner
+627,5,254,Gate Access
+628,3,298,NFC Reader
+629,3,298,Fingerprint Scanner
+630,9,240,Mobile App Scanner
+631,9,240,Facial Recognition
+632,9,240,Turnstile
+633,8,228,Mobile App Scanner
+634,8,228,Fingerprint Scanner
+635,8,228,Turnstile
+636,9,66,Gate Access
+637,9,66,Card Reader
+638,9,66,Keypad Access
+639,4,259,Fingerprint Scanner
+640,4,259,Gate Access
+641,4,259,QR Code Scanner
+642,1,210,Barcode Scanner
+643,1,210,Barcode Scanner
+644,1,210,QR Code Scanner
+645,8,297,Card Reader
+646,8,297,Gate Access
+647,8,297,Fingerprint Scanner
+648,6,393,Mobile App Scanner
+649,6,393,QR Code Scanner
+650,3,272,Fingerprint Scanner
+651,3,272,QR Code Scanner
+652,9,72,NFC Reader
+653,9,72,Gate Access
+654,9,72,QR Code Scanner
+655,2,132,Mobile App Scanner
+656,2,132,Card Reader
+657,8,157,Card Reader
+658,8,157,QR Code Scanner
+659,8,157,Keypad Access
+660,4,376,Card Reader
+661,4,376,Keypad Access
+662,4,376,Mobile App Scanner
+663,10,149,QR Code Scanner
+664,10,149,Card Reader
+665,10,149,QR Code Scanner
+666,8,271,Barcode Scanner
+667,8,271,Fingerprint Scanner
+668,8,271,Turnstile
+669,8,187,Turnstile
+670,8,187,Card Reader
+671,8,366,Card Reader
+672,8,366,QR Code Scanner
+673,2,232,Turnstile
+674,2,232,Mobile App Scanner
+675,2,232,Mobile App Scanner
+676,3,24,NFC Reader
+677,3,24,Card Reader
+678,6,202,QR Code Scanner
+679,6,202,Fingerprint Scanner
+680,6,202,Mobile App Scanner
+681,10,321,Mobile App Scanner
+682,10,321,Barcode Scanner
+683,10,321,Keypad Access
+684,4,238,Fingerprint Scanner
+685,4,238,Facial Recognition
+686,4,170,Turnstile
+687,4,170,Card Reader
+688,3,221,Keypad Access
+689,3,221,Barcode Scanner
+690,7,216,Mobile App Scanner
+691,7,216,Card Reader
+692,8,38,Turnstile
+693,8,38,Fingerprint Scanner
+694,2,168,NFC Reader
+695,2,168,QR Code Scanner
+696,2,168,Mobile App Scanner
+697,5,253,Card Reader
+698,5,253,QR Code Scanner
+699,7,26,QR Code Scanner
+700,7,26,Facial Recognition
+701,7,26,Facial Recognition
+702,7,376,QR Code Scanner
+703,7,376,Facial Recognition
+704,7,376,Keypad Access
+705,1,29,Card Reader
+706,1,29,Turnstile
+707,1,29,Fingerprint Scanner
+708,10,388,Barcode Scanner
+709,10,388,Facial Recognition
+710,1,224,Barcode Scanner
+711,1,224,Fingerprint Scanner
+712,4,339,Facial Recognition
+713,4,339,Gate Access
+714,1,7,Facial Recognition
+715,1,7,Barcode Scanner
+716,6,350,Keypad Access
+717,6,350,Fingerprint Scanner
+718,5,266,Turnstile
+719,5,266,Keypad Access
+720,2,314,QR Code Scanner
+721,2,314,Barcode Scanner
+722,2,314,Fingerprint Scanner
+723,5,34,Gate Access
+724,5,34,Mobile App Scanner
+725,5,148,Mobile App Scanner
+726,5,148,QR Code Scanner
+727,5,148,Facial Recognition
+728,4,53,Facial Recognition
+729,4,53,NFC Reader
+730,4,53,NFC Reader
+731,1,235,Mobile App Scanner
+732,1,235,QR Code Scanner
+733,1,235,NFC Reader
+734,7,1,Fingerprint Scanner
+735,7,1,Keypad Access
+736,10,392,Keypad Access
+737,10,392,Mobile App Scanner
+738,5,100,QR Code Scanner
+739,5,100,Facial Recognition
+740,5,100,Fingerprint Scanner
+741,1,334,Turnstile
+742,1,334,Keypad Access
+743,5,105,Mobile App Scanner
+744,5,105,Facial Recognition
+745,5,105,Fingerprint Scanner
+746,1,128,QR Code Scanner
+747,1,128,Barcode Scanner
+748,3,33,Keypad Access
+749,3,33,Mobile App Scanner
+750,7,171,Mobile App Scanner
+751,7,171,QR Code Scanner
+752,7,171,Fingerprint Scanner
+753,8,238,Gate Access
+754,8,238,Turnstile
+755,8,238,Fingerprint Scanner
+756,1,251,Keypad Access
+757,1,251,QR Code Scanner
+758,1,251,Mobile App Scanner
+759,10,247,Keypad Access
+760,10,247,Card Reader
+761,10,247,NFC Reader
+762,8,287,Facial Recognition
+763,8,287,Facial Recognition
+764,8,287,Gate Access
+765,6,55,Keypad Access
+766,6,55,Card Reader
+767,1,203,QR Code Scanner
+768,1,203,Fingerprint Scanner
+769,9,62,Keypad Access
+770,9,62,Gate Access
+771,2,321,NFC Reader
+772,2,321,Mobile App Scanner
+773,2,321,Keypad Access
+774,6,129,Keypad Access
+775,6,129,Mobile App Scanner
+776,6,300,Gate Access
+777,6,300,Keypad Access
+778,9,119,Fingerprint Scanner
+779,9,119,Mobile App Scanner
+780,3,148,Mobile App Scanner
+781,3,148,Keypad Access
+782,6,113,QR Code Scanner
+783,6,113,QR Code Scanner
+784,5,86,NFC Reader
+785,5,86,NFC Reader
+786,5,86,Mobile App Scanner
+787,2,387,Mobile App Scanner
+788,2,387,QR Code Scanner
+789,2,387,Barcode Scanner
+790,2,163,QR Code Scanner
+791,2,163,Turnstile
+792,1,139,NFC Reader
+793,1,139,Mobile App Scanner
+794,1,139,Gate Access
+795,6,5,Barcode Scanner
+796,6,5,Card Reader
+797,6,5,NFC Reader
+798,2,377,Fingerprint Scanner
+799,2,377,QR Code Scanner
+800,7,375,NFC Reader
+801,7,375,Facial Recognition
+802,4,188,Card Reader
+803,4,188,Turnstile
+804,10,240,QR Code Scanner
+805,10,240,QR Code Scanner
+806,7,86,Mobile App Scanner
+807,7,86,Gate Access
+808,7,86,Card Reader
+809,3,119,Gate Access
+810,3,119,QR Code Scanner
+811,3,119,NFC Reader
+812,4,137,Turnstile
+813,4,137,Mobile App Scanner
+814,4,137,Gate Access
+815,8,328,Gate Access
+816,8,328,Turnstile
+817,8,328,Barcode Scanner
+818,8,78,Facial Recognition
+819,8,78,Turnstile
+820,10,60,Keypad Access
+821,10,60,Keypad Access
+822,10,60,Turnstile
+823,6,109,Keypad Access
+824,6,109,Mobile App Scanner
+825,4,399,Barcode Scanner
+826,4,399,Mobile App Scanner
+827,8,30,Turnstile
+828,8,30,Keypad Access
+829,3,192,Turnstile
+830,3,192,Keypad Access
+831,10,111,Card Reader
+832,10,111,Barcode Scanner
+833,9,327,Mobile App Scanner
+834,9,327,Gate Access
+835,8,322,Gate Access
+836,8,322,NFC Reader
+837,6,27,Turnstile
+838,6,27,QR Code Scanner
+839,10,41,Turnstile
+840,10,41,Gate Access
+841,10,41,Keypad Access
+842,7,19,Gate Access
+843,7,19,Card Reader
+844,3,257,Turnstile
+845,3,257,QR Code Scanner
+846,9,203,Card Reader
+847,9,203,NFC Reader
+848,10,395,Gate Access
+849,10,395,Mobile App Scanner
+850,1,2,Facial Recognition
+851,1,2,Barcode Scanner
+852,1,2,Turnstile
+853,2,54,Facial Recognition
+854,2,54,NFC Reader
+855,2,206,Barcode Scanner
+856,2,206,Facial Recognition
+857,9,188,Barcode Scanner
+858,9,188,NFC Reader
+859,3,178,Card Reader
+860,3,178,Keypad Access
+861,7,109,QR Code Scanner
+862,7,109,Turnstile
+863,7,109,Fingerprint Scanner
+864,8,283,Keypad Access
+865,8,283,QR Code Scanner
+866,6,387,Gate Access
+867,6,387,Card Reader
+868,9,48,QR Code Scanner
+869,9,48,Keypad Access
+870,9,48,QR Code Scanner
+871,6,115,Mobile App Scanner
+872,6,115,Turnstile
+873,6,115,Turnstile
+874,4,257,Mobile App Scanner
+875,4,257,Mobile App Scanner
+876,4,257,Barcode Scanner
+877,1,71,Mobile App Scanner
+878,1,71,Card Reader
+879,1,71,Barcode Scanner
+880,7,12,Fingerprint Scanner
+881,7,12,Mobile App Scanner
+882,10,101,Gate Access
+883,10,101,Mobile App Scanner
+884,5,212,Mobile App Scanner
+885,5,212,QR Code Scanner
+886,5,212,Fingerprint Scanner
+887,3,364,Keypad Access
+888,3,364,Gate Access
+889,10,204,QR Code Scanner
+890,10,204,QR Code Scanner
+891,10,204,NFC Reader
+892,7,258,Fingerprint Scanner
+893,7,258,Turnstile
+894,7,258,Gate Access
+895,7,96,Fingerprint Scanner
+896,7,96,NFC Reader
+897,8,62,Keypad Access
+898,8,62,Turnstile
+899,5,32,Mobile App Scanner
+900,5,32,Facial Recognition
+901,5,32,Turnstile
+902,1,307,Gate Access
+903,1,307,Keypad Access
+904,2,239,Turnstile
+905,2,239,Gate Access
+906,2,239,Facial Recognition
+907,1,79,Barcode Scanner
+908,1,79,Facial Recognition
+909,10,143,Card Reader
+910,10,143,Fingerprint Scanner
+911,10,143,Keypad Access
+912,10,191,QR Code Scanner
+913,10,191,Keypad Access
+914,10,191,Card Reader
+915,7,371,Barcode Scanner
+916,7,371,Turnstile
+917,9,37,NFC Reader
+918,9,37,Turnstile
+919,9,37,Barcode Scanner
+920,1,24,Facial Recognition
+921,1,24,NFC Reader
+922,7,77,NFC Reader
+923,7,77,Barcode Scanner
+924,7,77,Keypad Access
+925,7,330,NFC Reader
+926,7,330,Gate Access
+927,7,330,NFC Reader
+928,6,203,Keypad Access
+929,6,203,Keypad Access
+930,6,203,NFC Reader
+931,8,204,NFC Reader
+932,8,204,Barcode Scanner
+933,9,117,Keypad Access
+934,9,117,QR Code Scanner
+935,5,239,Turnstile
+936,5,239,Mobile App Scanner
+937,7,64,Fingerprint Scanner
+938,7,64,NFC Reader
+939,7,64,NFC Reader
+940,9,243,Barcode Scanner
+941,9,243,Facial Recognition
+942,1,170,Card Reader
+943,1,170,Turnstile
+944,1,170,Mobile App Scanner
+945,4,184,Turnstile
+946,4,184,Barcode Scanner
+947,3,386,QR Code Scanner
+948,3,386,Keypad Access
+949,3,386,Gate Access
+950,10,316,QR Code Scanner
+951,10,316,Card Reader
+952,5,391,Keypad Access
+953,5,391,NFC Reader
+954,5,391,Card Reader
+955,10,359,Facial Recognition
+956,10,359,Barcode Scanner
+957,2,271,QR Code Scanner
+958,2,271,Fingerprint Scanner
+959,7,351,Turnstile
+960,7,351,Keypad Access
+961,4,82,Facial Recognition
+962,4,82,Keypad Access
+963,5,28,Facial Recognition
+964,5,28,Turnstile
+965,3,398,Facial Recognition
+966,3,398,Barcode Scanner
+967,3,398,Turnstile
+968,7,378,Mobile App Scanner
+969,7,378,NFC Reader
+970,7,378,Barcode Scanner
+971,8,72,NFC Reader
+972,8,72,Barcode Scanner
+973,8,72,Facial Recognition
+974,7,85,Mobile App Scanner
+975,7,85,Keypad Access
+976,7,85,Card Reader
+977,4,2,Turnstile
+978,4,2,Mobile App Scanner
+979,5,295,Mobile App Scanner
+980,5,295,Card Reader
+981,10,54,Fingerprint Scanner
+982,10,54,Keypad Access
+983,10,100,Fingerprint Scanner
+984,10,100,Fingerprint Scanner
+985,10,100,Keypad Access
+986,9,79,Facial Recognition
+987,9,79,QR Code Scanner
+988,9,264,Keypad Access
+989,9,264,Fingerprint Scanner
+990,9,264,Mobile App Scanner
+991,1,320,Turnstile
+992,1,320,Facial Recognition
+993,1,320,Turnstile
+994,6,383,Turnstile
+995,6,383,NFC Reader
+996,4,320,Turnstile
+997,4,320,Fingerprint Scanner
+998,4,320,Keypad Access
+999,3,238,QR Code Scanner
+1000,3,238,Barcode Scanner
+1001,3,238,Fingerprint Scanner
+1002,9,266,QR Code Scanner
+1003,9,266,Card Reader
+1004,9,266,QR Code Scanner
+1005,8,301,Barcode Scanner
+1006,8,301,QR Code Scanner
+1007,6,378,Keypad Access
+1008,6,378,NFC Reader
+1009,10,315,NFC Reader
+1010,10,315,Keypad Access
+1011,10,315,QR Code Scanner
+1012,4,375,Gate Access
+1013,4,375,Mobile App Scanner
+1014,10,374,Keypad Access
+1015,10,374,Fingerprint Scanner
+1016,6,21,Fingerprint Scanner
+1017,6,21,Barcode Scanner
+1018,6,21,Card Reader
+1019,1,150,Fingerprint Scanner
+1020,1,150,Keypad Access
+1021,10,37,Card Reader
+1022,10,37,Fingerprint Scanner
+1023,10,37,NFC Reader
+1024,5,61,Turnstile
+1025,5,61,Facial Recognition
+1026,5,61,Card Reader
+1027,5,165,Barcode Scanner
+1028,5,165,Mobile App Scanner
+1029,7,366,Fingerprint Scanner
+1030,7,366,Gate Access
+1031,7,366,Gate Access
+1032,6,271,Card Reader
+1033,6,271,Mobile App Scanner
+1034,8,36,Card Reader
+1035,8,36,QR Code Scanner
+1036,8,36,Mobile App Scanner
+1037,7,327,Facial Recognition
+1038,7,327,NFC Reader
+1039,10,131,Keypad Access
+1040,10,131,QR Code Scanner
+1041,9,299,Card Reader
+1042,9,299,Gate Access
+1043,9,299,Fingerprint Scanner
+1044,1,216,Card Reader
+1045,1,216,Card Reader
+1046,1,216,Barcode Scanner
+1047,1,49,Fingerprint Scanner
+1048,1,49,Barcode Scanner
+1049,1,49,Facial Recognition
+1050,3,379,QR Code Scanner
+1051,3,379,Facial Recognition
+1052,3,379,Barcode Scanner
+1053,1,178,Card Reader
+1054,1,178,Barcode Scanner
+1055,3,177,QR Code Scanner
+1056,3,177,Turnstile
+1057,9,276,Gate Access
+1058,9,276,Gate Access
+1059,9,122,QR Code Scanner
+1060,9,122,Fingerprint Scanner
+1061,9,122,QR Code Scanner
+1062,5,374,Mobile App Scanner
+1063,5,374,QR Code Scanner
+1064,8,213,QR Code Scanner
+1065,8,213,QR Code Scanner
+1066,10,218,Fingerprint Scanner
+1067,10,218,NFC Reader
+1068,5,331,Keypad Access
+1069,5,331,Facial Recognition
+1070,6,272,Gate Access
+1071,6,272,Card Reader
+1072,6,272,Mobile App Scanner
+1073,9,170,Fingerprint Scanner
+1074,9,170,QR Code Scanner
+1075,9,170,QR Code Scanner
+1076,6,264,NFC Reader
+1077,6,264,Gate Access
+1078,4,255,NFC Reader
+1079,4,255,Mobile App Scanner
+1080,1,70,Turnstile
+1081,1,70,Turnstile
+1082,4,237,Barcode Scanner
+1083,4,237,Mobile App Scanner
+1084,4,237,Gate Access
+1085,6,187,Keypad Access
+1086,6,187,Turnstile
+1087,7,120,Card Reader
+1088,7,120,Card Reader
+1089,3,37,Fingerprint Scanner
+1090,3,37,Facial Recognition
+1091,9,241,NFC Reader
+1092,9,241,Mobile App Scanner
+1093,6,143,Card Reader
+1094,6,143,Card Reader
+1095,6,143,Mobile App Scanner
+1096,4,86,NFC Reader
+1097,4,86,NFC Reader
+1098,9,357,Facial Recognition
+1099,9,357,NFC Reader
+1100,7,51,Keypad Access
+1101,7,51,NFC Reader
+1102,7,51,Card Reader
+1103,4,234,Turnstile
+1104,4,234,Facial Recognition
+1105,7,256,Barcode Scanner
+1106,7,256,Mobile App Scanner
+1107,7,256,Turnstile
+1108,8,115,Fingerprint Scanner
+1109,8,115,Facial Recognition
+1110,8,115,Facial Recognition
+1111,2,320,Card Reader
+1112,2,320,Facial Recognition
+1113,2,320,NFC Reader
+1114,9,196,Mobile App Scanner
+1115,9,196,Turnstile
+1116,2,317,Card Reader
+1117,2,317,Mobile App Scanner
+1118,2,317,Facial Recognition
+1119,6,26,Gate Access
+1120,6,26,QR Code Scanner
+1121,3,215,Mobile App Scanner
+1122,3,215,Turnstile
+1123,5,396,Turnstile
+1124,5,396,Barcode Scanner
+1125,5,396,QR Code Scanner
+1126,9,263,Turnstile
+1127,9,263,QR Code Scanner
+1128,10,356,Fingerprint Scanner
+1129,10,356,Facial Recognition
+1130,8,125,Card Reader
+1131,8,125,Turnstile
+1132,8,125,Gate Access
+1133,7,368,Card Reader
+1134,7,368,Barcode Scanner
+1135,9,372,QR Code Scanner
+1136,9,372,Facial Recognition
+1137,9,372,Fingerprint Scanner
+1138,9,189,Mobile App Scanner
+1139,9,189,NFC Reader
+1140,9,189,Fingerprint Scanner
+1141,8,140,NFC Reader
+1142,8,140,Turnstile
+1143,6,277,Barcode Scanner
+1144,6,277,Card Reader
+1145,6,277,Fingerprint Scanner
+1146,10,4,NFC Reader
+1147,10,4,Mobile App Scanner
+1148,6,330,Mobile App Scanner
+1149,6,330,Gate Access
+1150,8,51,Card Reader
+1151,8,51,QR Code Scanner
+1152,2,101,Mobile App Scanner
+1153,2,101,NFC Reader
+1154,2,101,NFC Reader
+1155,8,67,Fingerprint Scanner
+1156,8,67,Barcode Scanner
+1157,8,67,QR Code Scanner
+1158,4,135,Keypad Access
+1159,4,135,Turnstile
+1160,5,373,Card Reader
+1161,5,373,Barcode Scanner
+1162,5,373,Gate Access
+1163,7,391,QR Code Scanner
+1164,7,391,Keypad Access
+1165,7,391,QR Code Scanner
+1166,3,269,Barcode Scanner
+1167,3,269,NFC Reader
+1168,1,264,Card Reader
+1169,1,264,Keypad Access
+1170,1,264,Barcode Scanner
+1171,8,229,Barcode Scanner
+1172,8,229,Gate Access
+1173,5,102,Facial Recognition
+1174,5,102,Fingerprint Scanner
+1175,2,230,NFC Reader
+1176,2,230,Gate Access
+1177,2,230,Mobile App Scanner
+1178,4,4,Keypad Access
+1179,4,4,Card Reader
+1180,8,388,QR Code Scanner
+1181,8,388,Card Reader
+1182,4,99,Barcode Scanner
+1183,4,99,Keypad Access
+1184,4,99,Mobile App Scanner
+1185,2,178,Keypad Access
+1186,2,178,Gate Access
+1187,2,186,Gate Access
+1188,2,186,Fingerprint Scanner
+1189,2,186,Fingerprint Scanner
+1190,9,109,Barcode Scanner
+1191,9,109,Fingerprint Scanner
+1192,9,109,Turnstile
+1193,9,399,Fingerprint Scanner
+1194,9,399,Barcode Scanner
+1195,10,202,QR Code Scanner
+1196,10,202,Fingerprint Scanner
+1197,10,202,Card Reader
+1198,2,185,Turnstile
+1199,2,185,Turnstile
+1200,2,389,Turnstile
+1201,2,389,Facial Recognition
+1202,2,389,NFC Reader
+1203,9,116,Turnstile
+1204,9,116,QR Code Scanner
+1205,9,116,Mobile App Scanner
+1206,10,309,Barcode Scanner
+1207,10,309,QR Code Scanner
+1208,7,159,QR Code Scanner
+1209,7,159,QR Code Scanner
+1210,7,282,QR Code Scanner
+1211,7,282,Keypad Access
+1212,7,282,Fingerprint Scanner
+1213,3,136,Facial Recognition
+1214,3,136,Fingerprint Scanner
+1215,5,47,QR Code Scanner
+1216,5,47,Turnstile
+1217,5,47,Facial Recognition
+1218,7,100,Keypad Access
+1219,7,100,NFC Reader
+1220,6,189,Gate Access
+1221,6,189,NFC Reader
+1222,6,189,Card Reader
+1223,6,335,Facial Recognition
+1224,6,335,Keypad Access
+1225,6,335,Keypad Access
+1226,5,304,Keypad Access
+1227,5,304,QR Code Scanner
+1228,3,315,QR Code Scanner
+1229,3,315,Keypad Access
+1230,3,315,Card Reader
+1231,1,166,Fingerprint Scanner
+1232,1,166,Fingerprint Scanner
+1233,1,166,Barcode Scanner
+1234,10,347,Turnstile
+1235,10,347,NFC Reader
+1236,10,347,Barcode Scanner
+1237,10,32,Fingerprint Scanner
+1238,10,32,Mobile App Scanner
+1239,10,32,Turnstile
+1240,7,215,Card Reader
+1241,7,215,Barcode Scanner
+1242,7,215,NFC Reader
+1243,3,98,Card Reader
+1244,3,98,Card Reader
+1245,3,98,QR Code Scanner
+1246,1,243,Mobile App Scanner
+1247,1,243,Turnstile
+1248,9,10,Card Reader
+1249,9,10,Gate Access
+1250,9,10,NFC Reader
+1251,6,373,Card Reader
+1252,6,373,QR Code Scanner
+1253,6,373,Barcode Scanner
+1254,8,382,NFC Reader
+1255,8,382,Gate Access
+1256,8,23,QR Code Scanner
+1257,8,23,Keypad Access
+1258,8,23,NFC Reader
+1259,3,354,Keypad Access
+1260,3,354,QR Code Scanner
+1261,7,182,QR Code Scanner
+1262,7,182,NFC Reader
+1263,6,178,NFC Reader
+1264,6,178,Mobile App Scanner
+1265,1,384,Gate Access
+1266,1,384,QR Code Scanner
+1267,7,265,Gate Access
+1268,7,265,Mobile App Scanner
+1269,7,265,Fingerprint Scanner
+1270,7,80,NFC Reader
+1271,7,80,QR Code Scanner
+1272,5,164,Turnstile
+1273,5,164,QR Code Scanner
+1274,5,164,Facial Recognition
+1275,10,368,Card Reader
+1276,10,368,Facial Recognition
+1277,10,368,Barcode Scanner
+1278,3,139,Mobile App Scanner
+1279,3,139,Barcode Scanner
+1280,3,139,Facial Recognition
+1281,9,284,QR Code Scanner
+1282,9,284,QR Code Scanner
+1283,9,284,NFC Reader
+1284,1,147,Barcode Scanner
+1285,1,147,Barcode Scanner
+1286,1,147,Fingerprint Scanner
+1287,7,399,Card Reader
+1288,7,399,Keypad Access
+1289,5,394,QR Code Scanner
+1290,5,394,Card Reader
+1291,5,394,QR Code Scanner
+1292,5,381,Mobile App Scanner
+1293,5,381,QR Code Scanner
+1294,1,175,Barcode Scanner
+1295,1,175,Fingerprint Scanner
+1296,6,240,Barcode Scanner
+1297,6,240,Mobile App Scanner
+1298,6,240,NFC Reader
+1299,4,168,Keypad Access
+1300,4,168,Mobile App Scanner
+1301,4,168,Turnstile
+1302,2,87,Card Reader
+1303,2,87,NFC Reader
+1304,7,41,Keypad Access
+1305,7,41,Fingerprint Scanner
+1306,7,41,QR Code Scanner
+1307,4,14,QR Code Scanner
+1308,4,14,Gate Access
+1309,1,262,Keypad Access
+1310,1,262,Mobile App Scanner
+1311,1,262,QR Code Scanner
+1312,10,255,Mobile App Scanner
+1313,10,255,Turnstile
+1314,10,373,Mobile App Scanner
+1315,10,373,Keypad Access
+1316,10,373,Gate Access
+1317,6,153,Fingerprint Scanner
+1318,6,153,Keypad Access
+1319,6,153,Keypad Access
+1320,8,384,Facial Recognition
+1321,8,384,Keypad Access
+1322,8,193,QR Code Scanner
+1323,8,193,Keypad Access
+1324,8,193,Turnstile
+1325,3,142,Card Reader
+1326,3,142,Gate Access
+1327,7,382,Barcode Scanner
+1328,7,382,NFC Reader
+1329,7,382,NFC Reader
+1330,6,348,Mobile App Scanner
+1331,6,348,Card Reader
+1332,6,348,NFC Reader
+1333,9,175,QR Code Scanner
+1334,9,175,Mobile App Scanner
+1335,9,175,Mobile App Scanner
+1336,2,93,Turnstile
+1337,2,93,Gate Access
+1338,2,93,Card Reader
+1339,8,398,QR Code Scanner
+1340,8,398,NFC Reader
+1341,2,6,Fingerprint Scanner
+1342,2,6,Mobile App Scanner
+1343,3,337,NFC Reader
+1344,3,337,Keypad Access
+1345,3,337,Turnstile
+1346,10,12,Fingerprint Scanner
+1347,10,12,Gate Access
+1348,10,12,Mobile App Scanner
+1349,7,329,Facial Recognition
+1350,7,329,NFC Reader
+1351,8,367,Turnstile
+1352,8,367,QR Code Scanner
+1353,4,309,Fingerprint Scanner
+1354,4,309,QR Code Scanner
+1355,9,28,QR Code Scanner
+1356,9,28,Keypad Access
+1357,1,156,NFC Reader
+1358,1,156,QR Code Scanner
+1359,1,156,Turnstile
+1360,6,381,Card Reader
+1361,6,381,Mobile App Scanner
+1362,4,187,Fingerprint Scanner
+1363,4,187,NFC Reader
+1364,8,347,Barcode Scanner
+1365,8,347,Barcode Scanner
+1366,4,223,Card Reader
+1367,4,223,Turnstile
+1368,4,321,Keypad Access
+1369,4,321,Barcode Scanner
+1370,9,262,Keypad Access
+1371,9,262,NFC Reader
+1372,6,23,Gate Access
+1373,6,23,Keypad Access
+1374,4,148,Card Reader
+1375,4,148,Gate Access
+1376,1,256,Turnstile
+1377,1,256,Barcode Scanner
+1378,1,256,NFC Reader
+1379,7,279,Gate Access
+1380,7,279,Gate Access
+1381,7,279,Gate Access
+1382,4,262,Facial Recognition
+1383,4,262,NFC Reader
+1384,4,262,NFC Reader
+1385,10,122,Gate Access
+1386,10,122,Turnstile
+1387,10,122,Facial Recognition
+1388,7,289,Gate Access
+1389,7,289,Mobile App Scanner
+1390,7,289,Card Reader
+1391,3,376,Turnstile
+1392,3,376,Turnstile
+1393,3,376,QR Code Scanner
+1394,4,279,Keypad Access
+1395,4,279,Keypad Access
+1396,1,249,Keypad Access
+1397,1,249,Turnstile
+1398,1,249,QR Code Scanner
+1399,7,247,Keypad Access
+1400,7,247,Gate Access
+1401,8,358,Barcode Scanner
+1402,8,358,Gate Access
+1403,5,136,NFC Reader
+1404,5,136,Keypad Access
+1405,5,136,Facial Recognition
+1406,8,92,Facial Recognition
+1407,8,92,QR Code Scanner
+1408,8,92,Facial Recognition
+1409,9,224,Fingerprint Scanner
+1410,9,224,Keypad Access
+1411,8,377,QR Code Scanner
+1412,8,377,Mobile App Scanner
+1413,8,377,Fingerprint Scanner
+1414,3,155,Gate Access
+1415,3,155,QR Code Scanner
+1416,3,399,Turnstile
+1417,3,399,Gate Access
+1418,6,184,Turnstile
+1419,6,184,Turnstile
+1420,6,184,Mobile App Scanner
+1421,1,95,NFC Reader
+1422,1,95,QR Code Scanner
+1423,6,389,Facial Recognition
+1424,6,389,Gate Access
+1425,4,29,Card Reader
+1426,4,29,NFC Reader
+1427,5,343,Fingerprint Scanner
+1428,5,343,NFC Reader
+1429,4,169,Keypad Access
+1430,4,169,Keypad Access
+1431,4,149,QR Code Scanner
+1432,4,149,Card Reader
+1433,7,44,Card Reader
+1434,7,44,Keypad Access
+1435,5,146,Fingerprint Scanner
+1436,5,146,QR Code Scanner
+1437,1,184,Barcode Scanner
+1438,1,184,Gate Access
+1439,2,108,Turnstile
+1440,2,108,Barcode Scanner
+1441,7,52,Card Reader
+1442,7,52,Gate Access
+1443,7,52,Card Reader
+1444,3,43,Keypad Access
+1445,3,43,Facial Recognition
+1446,8,189,Keypad Access
+1447,8,189,Turnstile
+1448,8,189,Turnstile
+1449,7,336,Gate Access
+1450,7,336,Keypad Access
+1451,7,336,Fingerprint Scanner
+1452,2,159,Card Reader
+1453,2,159,Gate Access
+1454,6,285,Keypad Access
+1455,6,285,Keypad Access
+1456,6,285,NFC Reader
+1457,2,216,NFC Reader
+1458,2,216,Mobile App Scanner
+1459,2,216,QR Code Scanner
+1460,9,77,Fingerprint Scanner
+1461,9,77,Keypad Access
+1462,6,176,Barcode Scanner
+1463,6,176,Barcode Scanner
+1464,6,176,NFC Reader
+1465,3,328,Gate Access
+1466,3,328,Gate Access
+1467,3,328,Gate Access
+1468,6,341,Fingerprint Scanner
+1469,6,341,Fingerprint Scanner
+1470,6,341,NFC Reader
+1471,10,174,NFC Reader
+1472,10,174,Mobile App Scanner
+1473,10,174,Keypad Access
+1474,8,24,Keypad Access
+1475,8,24,Barcode Scanner
+1476,2,354,Keypad Access
+1477,2,354,Gate Access
+1478,2,354,Gate Access
+1479,10,68,Turnstile
+1480,10,68,NFC Reader
+1481,10,68,Keypad Access
+1482,4,123,QR Code Scanner
+1483,4,123,NFC Reader
+1484,4,123,Mobile App Scanner
+1485,1,10,Facial Recognition
+1486,1,10,Fingerprint Scanner

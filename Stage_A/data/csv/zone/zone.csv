@@ -1,0 +1,601 @@
+zoneid,gymid,zonetype,onlyformembers,isaccessible
+10,214,soccer field,TRUE,TRUE
+2,139,main entry,FALSE,FALSE
+5,250,basketball court,TRUE,TRUE
+5,186,jacuzzi,TRUE,TRUE
+4,284,yoga area,FALSE,TRUE
+8,310,boxing area,FALSE,TRUE
+8,105,basketball court,FALSE,TRUE
+8,194,stretching area,TRUE,TRUE
+3,67,sauna,TRUE,TRUE
+4,12,volleyball court,TRUE,TRUE
+3,212,track,TRUE,TRUE
+1,105,volleyball court,FALSE,TRUE
+3,104,swimming area,FALSE,TRUE
+5,263,rest area,FALSE,TRUE
+10,308,rest area,FALSE,TRUE
+2,397,physical therapy area,FALSE,FALSE
+3,251,soccer field,FALSE,FALSE
+9,61,volleyball court,TRUE,TRUE
+2,122,volleyball court,FALSE,TRUE
+1,76,cardio area,FALSE,TRUE
+5,288,volleyball court,FALSE,TRUE
+8,64,yoga area,FALSE,TRUE
+2,209,yoga area,FALSE,TRUE
+1,176,locker room,FALSE,TRUE
+6,288,group fitness studio,TRUE,FALSE
+10,346,weightlifting area,TRUE,FALSE
+5,364,personal training area,FALSE,FALSE
+10,391,sauna,TRUE,TRUE
+2,90,yoga area,TRUE,TRUE
+8,394,basketball court,FALSE,TRUE
+6,32,locker room,TRUE,TRUE
+5,120,childcare area,FALSE,TRUE
+3,282,track,FALSE,TRUE
+4,292,main entry,TRUE,TRUE
+3,248,boxing area,TRUE,TRUE
+8,5,swimming area,FALSE,FALSE
+5,44,personal training area,FALSE,TRUE
+7,98,climbing wall,TRUE,TRUE
+5,340,weightlifting area,FALSE,TRUE
+9,125,stretching area,TRUE,FALSE
+1,242,stretching area,FALSE,TRUE
+6,10,indoor cycling area,TRUE,TRUE
+8,178,cardio area,FALSE,TRUE
+9,177,swimming area,TRUE,TRUE
+1,33,main entry,FALSE,FALSE
+6,397,indoor cycling area,FALSE,TRUE
+7,144,main entry,TRUE,FALSE
+6,214,sauna,FALSE,FALSE
+1,239,volleyball court,TRUE,FALSE
+3,35,jacuzzi,FALSE,TRUE
+6,384,rest area,FALSE,TRUE
+10,166,personal training area,TRUE,FALSE
+6,48,boxing area,FALSE,TRUE
+5,327,jacuzzi,TRUE,TRUE
+6,158,locker room,TRUE,TRUE
+2,32,indoor cycling area,TRUE,TRUE
+2,284,rest area,TRUE,TRUE
+5,379,climbing wall,TRUE,TRUE
+10,118,climbing wall,TRUE,TRUE
+1,19,childcare area,TRUE,FALSE
+5,392,physical therapy area,FALSE,TRUE
+6,279,indoor cycling area,TRUE,TRUE
+3,211,rest area,TRUE,TRUE
+1,212,main entry,TRUE,TRUE
+1,158,rest area,TRUE,TRUE
+8,248,main entry,TRUE,TRUE
+3,170,basketball court,FALSE,FALSE
+8,32,sauna,FALSE,TRUE
+2,56,climbing wall,FALSE,TRUE
+2,51,group fitness studio,TRUE,TRUE
+3,61,group fitness studio,FALSE,FALSE
+4,151,locker room,FALSE,TRUE
+2,280,personal training area,TRUE,FALSE
+8,321,rest area,TRUE,TRUE
+6,112,soccer field,TRUE,TRUE
+8,169,basketball court,TRUE,TRUE
+7,274,track,FALSE,TRUE
+5,371,personal training area,FALSE,FALSE
+3,60,swimming area,TRUE,TRUE
+4,49,basketball court,TRUE,TRUE
+2,107,personal training area,FALSE,TRUE
+7,262,climbing wall,FALSE,TRUE
+4,62,cardio area,FALSE,FALSE
+10,50,weightlifting area,TRUE,TRUE
+1,289,childcare area,TRUE,TRUE
+5,353,cardio area,TRUE,TRUE
+5,215,weightlifting area,TRUE,TRUE
+5,224,track,TRUE,TRUE
+2,290,basketball court,TRUE,TRUE
+9,306,volleyball court,FALSE,TRUE
+2,134,stretching area,TRUE,TRUE
+7,316,track,TRUE,TRUE
+3,143,soccer field,TRUE,TRUE
+8,195,jacuzzi,TRUE,FALSE
+10,299,basketball court,TRUE,TRUE
+5,15,boxing area,TRUE,FALSE
+10,246,basketball court,FALSE,FALSE
+2,326,rest area,TRUE,TRUE
+1,152,locker room,FALSE,TRUE
+1,257,locker room,FALSE,FALSE
+7,165,swimming area,FALSE,TRUE
+4,177,climbing wall,TRUE,FALSE
+9,202,basketball court,FALSE,TRUE
+8,308,boxing area,FALSE,FALSE
+1,52,group fitness studio,TRUE,TRUE
+3,253,personal training area,TRUE,FALSE
+3,17,track,TRUE,FALSE
+8,324,indoor cycling area,FALSE,TRUE
+2,244,climbing wall,TRUE,TRUE
+2,14,soccer field,TRUE,TRUE
+9,291,group fitness studio,FALSE,FALSE
+8,350,soccer field,TRUE,TRUE
+3,246,track,TRUE,TRUE
+1,16,boxing area,TRUE,FALSE
+6,309,rest area,FALSE,TRUE
+8,184,jacuzzi,FALSE,TRUE
+5,301,volleyball court,TRUE,FALSE
+5,328,main entry,FALSE,TRUE
+10,254,jacuzzi,TRUE,TRUE
+9,209,climbing wall,FALSE,TRUE
+2,353,climbing wall,TRUE,TRUE
+5,192,jacuzzi,FALSE,TRUE
+6,352,childcare area,FALSE,TRUE
+5,339,volleyball court,TRUE,TRUE
+6,155,volleyball court,TRUE,TRUE
+3,42,main entry,FALSE,FALSE
+1,332,track,TRUE,TRUE
+8,313,main entry,TRUE,TRUE
+8,386,sauna,FALSE,TRUE
+7,346,group fitness studio,FALSE,TRUE
+5,279,jacuzzi,TRUE,TRUE
+7,92,personal training area,FALSE,TRUE
+5,229,locker room,TRUE,TRUE
+6,1,soccer field,FALSE,TRUE
+6,311,jacuzzi,TRUE,TRUE
+8,380,weightlifting area,TRUE,TRUE
+5,35,stretching area,FALSE,FALSE
+5,299,weightlifting area,FALSE,TRUE
+7,370,climbing wall,FALSE,TRUE
+4,58,rest area,FALSE,TRUE
+6,297,group fitness studio,FALSE,TRUE
+3,161,jacuzzi,FALSE,TRUE
+6,63,stretching area,TRUE,TRUE
+5,398,basketball court,TRUE,TRUE
+6,76,boxing area,TRUE,TRUE
+1,14,cardio area,TRUE,TRUE
+9,39,boxing area,TRUE,TRUE
+7,293,main entry,TRUE,TRUE
+5,196,jacuzzi,TRUE,TRUE
+5,214,yoga area,FALSE,TRUE
+8,318,childcare area,TRUE,TRUE
+8,280,jacuzzi,TRUE,TRUE
+1,45,track,TRUE,TRUE
+5,173,swimming area,FALSE,TRUE
+8,82,boxing area,FALSE,TRUE
+10,324,indoor cycling area,TRUE,TRUE
+6,340,group fitness studio,TRUE,TRUE
+5,90,group fitness studio,FALSE,TRUE
+4,93,indoor cycling area,TRUE,TRUE
+9,90,boxing area,FALSE,TRUE
+2,361,boxing area,FALSE,TRUE
+2,39,stretching area,TRUE,TRUE
+3,389,cardio area,FALSE,FALSE
+2,25,volleyball court,FALSE,TRUE
+8,6,locker room,TRUE,TRUE
+3,287,weightlifting area,FALSE,TRUE
+5,95,jacuzzi,TRUE,TRUE
+7,140,soccer field,FALSE,TRUE
+10,208,weightlifting area,FALSE,FALSE
+6,379,locker room,FALSE,TRUE
+7,231,jacuzzi,FALSE,TRUE
+2,393,climbing wall,TRUE,TRUE
+10,329,cardio area,FALSE,TRUE
+7,278,locker room,TRUE,FALSE
+10,5,locker room,TRUE,TRUE
+4,288,personal training area,TRUE,FALSE
+3,357,cardio area,FALSE,TRUE
+3,171,sauna,FALSE,TRUE
+7,347,locker room,TRUE,TRUE
+1,160,physical therapy area,TRUE,TRUE
+7,221,boxing area,TRUE,TRUE
+8,375,boxing area,FALSE,TRUE
+1,229,climbing wall,FALSE,FALSE
+2,48,basketball court,FALSE,TRUE
+9,60,main entry,FALSE,TRUE
+6,208,swimming area,FALSE,TRUE
+5,189,indoor cycling area,TRUE,TRUE
+5,360,indoor cycling area,TRUE,TRUE
+10,52,boxing area,FALSE,FALSE
+7,196,jacuzzi,FALSE,FALSE
+5,144,climbing wall,FALSE,TRUE
+4,163,yoga area,FALSE,TRUE
+7,105,boxing area,FALSE,TRUE
+5,55,group fitness studio,FALSE,FALSE
+3,157,locker room,FALSE,TRUE
+4,146,personal training area,TRUE,TRUE
+4,101,stretching area,TRUE,TRUE
+3,102,swimming area,TRUE,FALSE
+3,206,track,TRUE,TRUE
+10,70,group fitness studio,FALSE,TRUE
+2,83,group fitness studio,FALSE,TRUE
+10,16,swimming area,FALSE,TRUE
+5,68,childcare area,TRUE,TRUE
+10,355,boxing area,TRUE,TRUE
+3,226,locker room,TRUE,TRUE
+6,33,volleyball court,TRUE,TRUE
+6,78,soccer field,TRUE,TRUE
+6,363,group fitness studio,FALSE,TRUE
+8,127,personal training area,TRUE,TRUE
+7,186,childcare area,TRUE,TRUE
+8,97,basketball court,FALSE,TRUE
+8,155,climbing wall,TRUE,TRUE
+8,378,personal training area,TRUE,TRUE
+10,222,swimming area,FALSE,TRUE
+5,312,indoor cycling area,FALSE,TRUE
+3,75,rest area,FALSE,TRUE
+9,184,yoga area,FALSE,FALSE
+10,385,sauna,TRUE,TRUE
+5,167,personal training area,TRUE,TRUE
+7,198,cardio area,FALSE,TRUE
+1,104,personal training area,TRUE,FALSE
+8,81,boxing area,FALSE,TRUE
+2,34,personal training area,FALSE,TRUE
+8,148,rest area,TRUE,TRUE
+4,338,climbing wall,TRUE,TRUE
+10,150,physical therapy area,FALSE,TRUE
+7,286,cardio area,FALSE,TRUE
+2,188,yoga area,TRUE,FALSE
+7,43,physical therapy area,TRUE,TRUE
+2,171,personal training area,FALSE,TRUE
+6,163,track,FALSE,TRUE
+1,270,basketball court,FALSE,TRUE
+7,213,soccer field,TRUE,TRUE
+7,312,stretching area,TRUE,TRUE
+9,41,sauna,TRUE,TRUE
+2,338,weightlifting area,FALSE,TRUE
+3,384,sauna,TRUE,TRUE
+10,312,jacuzzi,FALSE,TRUE
+1,324,basketball court,FALSE,FALSE
+3,242,indoor cycling area,FALSE,FALSE
+5,124,physical therapy area,FALSE,TRUE
+1,197,jacuzzi,FALSE,TRUE
+8,305,physical therapy area,FALSE,TRUE
+2,204,childcare area,FALSE,FALSE
+5,387,cardio area,FALSE,TRUE
+7,325,physical therapy area,TRUE,TRUE
+5,41,cardio area,FALSE,TRUE
+1,228,volleyball court,FALSE,TRUE
+9,156,soccer field,TRUE,TRUE
+9,334,locker room,FALSE,TRUE
+10,27,basketball court,TRUE,TRUE
+8,102,childcare area,FALSE,TRUE
+5,254,group fitness studio,FALSE,TRUE
+3,298,locker room,FALSE,TRUE
+9,240,swimming area,TRUE,TRUE
+8,228,swimming area,FALSE,TRUE
+9,66,personal training area,TRUE,TRUE
+4,259,weightlifting area,TRUE,TRUE
+1,210,sauna,TRUE,TRUE
+8,297,weightlifting area,FALSE,TRUE
+6,393,climbing wall,TRUE,TRUE
+3,272,swimming area,FALSE,TRUE
+9,72,weightlifting area,FALSE,TRUE
+2,132,stretching area,TRUE,TRUE
+8,157,volleyball court,TRUE,TRUE
+4,376,volleyball court,TRUE,TRUE
+10,149,indoor cycling area,TRUE,TRUE
+8,271,jacuzzi,FALSE,TRUE
+8,187,soccer field,FALSE,TRUE
+8,366,jacuzzi,TRUE,TRUE
+2,232,physical therapy area,TRUE,TRUE
+3,24,basketball court,TRUE,TRUE
+6,202,soccer field,FALSE,FALSE
+10,321,locker room,TRUE,FALSE
+4,238,jacuzzi,TRUE,TRUE
+4,170,indoor cycling area,FALSE,FALSE
+3,221,boxing area,FALSE,TRUE
+7,216,yoga area,FALSE,TRUE
+8,38,climbing wall,FALSE,TRUE
+2,168,swimming area,TRUE,TRUE
+5,253,track,TRUE,TRUE
+7,26,locker room,FALSE,TRUE
+7,376,rest area,TRUE,TRUE
+1,29,stretching area,TRUE,TRUE
+10,388,jacuzzi,FALSE,TRUE
+1,224,sauna,TRUE,TRUE
+4,339,boxing area,TRUE,TRUE
+1,7,track,TRUE,TRUE
+6,350,sauna,TRUE,FALSE
+5,266,swimming area,TRUE,TRUE
+2,314,weightlifting area,TRUE,TRUE
+5,34,childcare area,TRUE,TRUE
+5,148,cardio area,TRUE,TRUE
+4,53,boxing area,FALSE,TRUE
+1,235,sauna,TRUE,TRUE
+7,1,personal training area,FALSE,TRUE
+10,392,swimming area,TRUE,FALSE
+5,100,boxing area,FALSE,TRUE
+1,334,stretching area,FALSE,TRUE
+5,105,swimming area,FALSE,TRUE
+1,128,weightlifting area,TRUE,TRUE
+3,33,sauna,FALSE,TRUE
+7,171,stretching area,FALSE,TRUE
+8,238,boxing area,TRUE,TRUE
+1,251,physical therapy area,TRUE,TRUE
+10,247,group fitness studio,TRUE,TRUE
+8,287,volleyball court,FALSE,TRUE
+6,55,sauna,TRUE,TRUE
+1,203,group fitness studio,TRUE,TRUE
+9,62,physical therapy area,TRUE,TRUE
+2,321,climbing wall,TRUE,TRUE
+6,129,childcare area,TRUE,TRUE
+6,300,rest area,TRUE,TRUE
+9,119,indoor cycling area,TRUE,TRUE
+3,148,jacuzzi,TRUE,TRUE
+6,113,track,FALSE,TRUE
+5,86,climbing wall,TRUE,FALSE
+2,387,yoga area,TRUE,TRUE
+2,163,childcare area,FALSE,TRUE
+1,139,rest area,FALSE,TRUE
+6,5,sauna,FALSE,TRUE
+2,377,weightlifting area,TRUE,TRUE
+7,375,sauna,TRUE,TRUE
+4,188,childcare area,FALSE,TRUE
+10,240,stretching area,TRUE,TRUE
+7,86,climbing wall,TRUE,TRUE
+3,119,soccer field,TRUE,TRUE
+4,137,group fitness studio,TRUE,TRUE
+8,328,boxing area,FALSE,TRUE
+8,78,group fitness studio,FALSE,TRUE
+10,60,jacuzzi,TRUE,TRUE
+6,109,locker room,FALSE,TRUE
+4,399,boxing area,TRUE,TRUE
+8,30,indoor cycling area,TRUE,FALSE
+3,192,main entry,FALSE,FALSE
+10,111,personal training area,FALSE,FALSE
+9,327,indoor cycling area,FALSE,FALSE
+8,322,stretching area,TRUE,TRUE
+6,27,climbing wall,FALSE,FALSE
+10,41,weightlifting area,FALSE,FALSE
+7,19,basketball court,FALSE,FALSE
+3,257,jacuzzi,TRUE,TRUE
+9,203,group fitness studio,FALSE,FALSE
+10,395,stretching area,FALSE,FALSE
+1,2,soccer field,FALSE,FALSE
+2,54,track,FALSE,TRUE
+2,206,rest area,TRUE,TRUE
+9,188,weightlifting area,FALSE,TRUE
+3,178,cardio area,FALSE,TRUE
+7,109,physical therapy area,FALSE,TRUE
+8,283,rest area,FALSE,TRUE
+6,387,swimming area,FALSE,FALSE
+9,48,volleyball court,TRUE,TRUE
+6,115,basketball court,TRUE,TRUE
+4,257,group fitness studio,FALSE,TRUE
+1,71,locker room,FALSE,TRUE
+7,12,stretching area,TRUE,TRUE
+10,101,main entry,FALSE,TRUE
+5,212,rest area,TRUE,TRUE
+3,364,jacuzzi,FALSE,TRUE
+10,204,childcare area,FALSE,TRUE
+7,258,weightlifting area,FALSE,TRUE
+7,96,boxing area,FALSE,TRUE
+8,62,yoga area,FALSE,TRUE
+5,32,jacuzzi,FALSE,FALSE
+1,307,soccer field,TRUE,TRUE
+2,239,swimming area,FALSE,TRUE
+1,79,main entry,FALSE,TRUE
+10,143,weightlifting area,TRUE,FALSE
+10,191,rest area,TRUE,TRUE
+7,371,climbing wall,TRUE,TRUE
+9,37,weightlifting area,FALSE,TRUE
+1,24,group fitness studio,TRUE,TRUE
+7,77,physical therapy area,FALSE,FALSE
+7,330,basketball court,FALSE,TRUE
+6,203,soccer field,TRUE,FALSE
+8,204,yoga area,TRUE,TRUE
+9,117,sauna,FALSE,TRUE
+5,239,indoor cycling area,TRUE,TRUE
+7,64,locker room,TRUE,TRUE
+9,243,basketball court,TRUE,TRUE
+1,170,weightlifting area,TRUE,TRUE
+4,184,cardio area,TRUE,TRUE
+3,386,rest area,FALSE,FALSE
+10,316,weightlifting area,FALSE,TRUE
+5,391,rest area,FALSE,TRUE
+10,359,soccer field,FALSE,TRUE
+2,271,weightlifting area,TRUE,FALSE
+7,351,personal training area,TRUE,TRUE
+4,82,rest area,FALSE,FALSE
+5,28,locker room,TRUE,TRUE
+3,398,indoor cycling area,TRUE,TRUE
+7,378,group fitness studio,FALSE,FALSE
+8,72,cardio area,TRUE,TRUE
+7,85,volleyball court,FALSE,TRUE
+4,2,track,TRUE,TRUE
+5,295,sauna,FALSE,FALSE
+10,54,weightlifting area,FALSE,FALSE
+10,100,locker room,FALSE,TRUE
+9,79,basketball court,FALSE,TRUE
+9,264,cardio area,TRUE,TRUE
+1,320,group fitness studio,FALSE,TRUE
+6,383,climbing wall,TRUE,TRUE
+4,320,main entry,TRUE,FALSE
+3,238,jacuzzi,TRUE,TRUE
+9,266,main entry,TRUE,FALSE
+8,301,main entry,TRUE,FALSE
+6,378,jacuzzi,TRUE,TRUE
+10,315,indoor cycling area,TRUE,TRUE
+4,375,track,FALSE,TRUE
+10,374,rest area,FALSE,TRUE
+6,21,physical therapy area,TRUE,TRUE
+1,150,sauna,TRUE,FALSE
+10,37,basketball court,TRUE,TRUE
+5,61,volleyball court,FALSE,FALSE
+5,165,rest area,FALSE,TRUE
+7,366,swimming area,TRUE,TRUE
+6,271,track,FALSE,TRUE
+8,36,yoga area,TRUE,FALSE
+7,327,rest area,TRUE,TRUE
+10,131,stretching area,FALSE,TRUE
+9,299,group fitness studio,TRUE,TRUE
+1,216,climbing wall,TRUE,TRUE
+1,49,weightlifting area,TRUE,FALSE
+3,379,stretching area,FALSE,FALSE
+1,178,indoor cycling area,FALSE,TRUE
+3,177,boxing area,TRUE,TRUE
+9,276,childcare area,TRUE,FALSE
+9,122,locker room,FALSE,TRUE
+5,374,main entry,FALSE,FALSE
+8,213,childcare area,TRUE,TRUE
+10,218,physical therapy area,FALSE,TRUE
+5,331,sauna,FALSE,TRUE
+6,272,basketball court,TRUE,FALSE
+9,170,volleyball court,TRUE,TRUE
+6,264,basketball court,FALSE,TRUE
+4,255,sauna,FALSE,TRUE
+1,70,basketball court,TRUE,TRUE
+4,237,group fitness studio,FALSE,TRUE
+6,187,main entry,FALSE,TRUE
+7,120,physical therapy area,TRUE,TRUE
+3,37,rest area,TRUE,TRUE
+9,241,physical therapy area,FALSE,TRUE
+6,143,physical therapy area,TRUE,TRUE
+4,86,track,FALSE,TRUE
+9,357,boxing area,TRUE,FALSE
+7,51,basketball court,TRUE,TRUE
+4,234,rest area,TRUE,TRUE
+7,256,cardio area,TRUE,TRUE
+8,115,boxing area,TRUE,TRUE
+2,320,indoor cycling area,TRUE,TRUE
+9,196,sauna,FALSE,TRUE
+2,317,volleyball court,TRUE,TRUE
+6,26,volleyball court,FALSE,TRUE
+3,215,track,TRUE,TRUE
+5,396,soccer field,FALSE,TRUE
+9,263,physical therapy area,TRUE,FALSE
+10,356,indoor cycling area,TRUE,FALSE
+8,125,yoga area,FALSE,TRUE
+7,368,stretching area,FALSE,FALSE
+9,372,cardio area,FALSE,TRUE
+9,189,basketball court,TRUE,TRUE
+8,140,yoga area,FALSE,TRUE
+6,277,physical therapy area,FALSE,TRUE
+10,4,indoor cycling area,FALSE,TRUE
+6,330,volleyball court,FALSE,FALSE
+8,51,personal training area,TRUE,TRUE
+2,101,group fitness studio,FALSE,TRUE
+8,67,climbing wall,FALSE,TRUE
+4,135,climbing wall,TRUE,TRUE
+5,373,personal training area,TRUE,FALSE
+7,391,sauna,TRUE,TRUE
+3,269,main entry,TRUE,TRUE
+1,264,climbing wall,TRUE,TRUE
+8,229,childcare area,TRUE,TRUE
+5,102,yoga area,TRUE,TRUE
+2,230,boxing area,TRUE,TRUE
+4,4,physical therapy area,FALSE,TRUE
+8,388,climbing wall,TRUE,FALSE
+4,99,locker room,TRUE,TRUE
+2,178,cardio area,TRUE,TRUE
+2,186,yoga area,TRUE,TRUE
+9,109,physical therapy area,TRUE,TRUE
+9,399,stretching area,TRUE,TRUE
+10,202,soccer field,FALSE,TRUE
+2,185,physical therapy area,FALSE,FALSE
+2,389,rest area,FALSE,FALSE
+9,116,jacuzzi,FALSE,FALSE
+10,309,physical therapy area,TRUE,TRUE
+7,159,weightlifting area,FALSE,TRUE
+7,282,physical therapy area,FALSE,TRUE
+3,136,weightlifting area,FALSE,TRUE
+5,47,basketball court,TRUE,TRUE
+7,100,personal training area,TRUE,TRUE
+6,189,physical therapy area,TRUE,FALSE
+6,335,indoor cycling area,TRUE,TRUE
+5,304,rest area,TRUE,TRUE
+3,315,track,FALSE,TRUE
+1,166,basketball court,TRUE,TRUE
+10,347,childcare area,FALSE,TRUE
+10,32,weightlifting area,TRUE,FALSE
+7,215,climbing wall,TRUE,TRUE
+3,98,swimming area,TRUE,TRUE
+1,243,locker room,TRUE,FALSE
+9,10,track,FALSE,TRUE
+6,373,boxing area,TRUE,TRUE
+8,382,basketball court,TRUE,TRUE
+8,23,locker room,TRUE,TRUE
+3,354,weightlifting area,TRUE,TRUE
+7,182,main entry,TRUE,TRUE
+6,178,basketball court,FALSE,TRUE
+1,384,boxing area,FALSE,TRUE
+7,265,physical therapy area,FALSE,TRUE
+7,80,climbing wall,FALSE,TRUE
+5,164,basketball court,TRUE,TRUE
+10,368,sauna,TRUE,TRUE
+3,139,sauna,TRUE,TRUE
+9,284,weightlifting area,FALSE,FALSE
+1,147,basketball court,TRUE,FALSE
+7,399,childcare area,TRUE,TRUE
+5,394,locker room,TRUE,FALSE
+5,381,basketball court,FALSE,TRUE
+1,175,indoor cycling area,TRUE,TRUE
+6,240,volleyball court,TRUE,TRUE
+4,168,track,FALSE,TRUE
+2,87,indoor cycling area,TRUE,FALSE
+7,41,locker room,FALSE,TRUE
+4,14,sauna,FALSE,FALSE
+1,262,weightlifting area,TRUE,TRUE
+10,255,volleyball court,FALSE,FALSE
+10,373,physical therapy area,TRUE,FALSE
+6,153,rest area,FALSE,TRUE
+8,384,jacuzzi,FALSE,TRUE
+8,193,stretching area,TRUE,FALSE
+3,142,basketball court,TRUE,TRUE
+7,382,personal training area,TRUE,FALSE
+6,348,rest area,FALSE,TRUE
+9,175,main entry,FALSE,TRUE
+2,93,track,TRUE,TRUE
+8,398,group fitness studio,FALSE,TRUE
+2,6,soccer field,FALSE,TRUE
+3,337,jacuzzi,TRUE,TRUE
+10,12,weightlifting area,TRUE,TRUE
+7,329,sauna,TRUE,FALSE
+8,367,climbing wall,FALSE,TRUE
+4,309,locker room,FALSE,TRUE
+9,28,cardio area,FALSE,TRUE
+1,156,basketball court,FALSE,TRUE
+6,381,indoor cycling area,TRUE,TRUE
+4,187,climbing wall,TRUE,TRUE
+8,347,boxing area,TRUE,TRUE
+4,223,swimming area,TRUE,TRUE
+4,321,sauna,TRUE,TRUE
+9,262,personal training area,TRUE,TRUE
+6,23,soccer field,TRUE,TRUE
+4,148,yoga area,TRUE,TRUE
+1,256,indoor cycling area,TRUE,FALSE
+7,279,main entry,TRUE,TRUE
+4,262,swimming area,TRUE,TRUE
+10,122,group fitness studio,TRUE,TRUE
+7,289,boxing area,FALSE,TRUE
+3,376,boxing area,FALSE,TRUE
+4,279,main entry,FALSE,TRUE
+1,249,personal training area,TRUE,FALSE
+7,247,swimming area,FALSE,FALSE
+8,358,volleyball court,TRUE,TRUE
+5,136,boxing area,FALSE,TRUE
+8,92,climbing wall,TRUE,TRUE
+9,224,group fitness studio,FALSE,FALSE
+8,377,weightlifting area,FALSE,FALSE
+3,155,sauna,FALSE,TRUE
+3,399,basketball court,FALSE,TRUE
+6,184,weightlifting area,FALSE,TRUE
+1,95,basketball court,FALSE,TRUE
+6,389,main entry,TRUE,TRUE
+4,29,boxing area,TRUE,TRUE
+5,343,track,TRUE,TRUE
+4,169,soccer field,FALSE,TRUE
+4,149,volleyball court,TRUE,TRUE
+7,44,yoga area,TRUE,FALSE
+5,146,childcare area,FALSE,TRUE
+1,184,personal training area,FALSE,TRUE
+2,108,weightlifting area,FALSE,TRUE
+7,52,volleyball court,TRUE,TRUE
+3,43,basketball court,FALSE,TRUE
+8,189,weightlifting area,FALSE,TRUE
+7,336,group fitness studio,FALSE,TRUE
+2,159,rest area,FALSE,FALSE
+6,285,rest area,TRUE,TRUE
+2,216,group fitness studio,TRUE,TRUE
+9,77,group fitness studio,TRUE,TRUE
+6,176,weightlifting area,FALSE,TRUE
+3,328,indoor cycling area,FALSE,TRUE
+6,341,main entry,TRUE,TRUE
+10,174,basketball court,TRUE,TRUE
+8,24,personal training area,TRUE,TRUE
+2,354,personal training area,TRUE,TRUE
+10,68,personal training area,TRUE,TRUE
+4,123,group fitness studio,TRUE,TRUE
+1,10,group fitness studio,TRUE,TRUE
