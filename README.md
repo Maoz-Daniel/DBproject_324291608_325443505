@@ -82,7 +82,10 @@
 
 
 בנוסף, הכנסנו בצורה ידנית את פקודות ה־INSERT עבור מנויים, אנשים ועובדי תחזוקה.  
-- [קבצי הכנסה (insert commands)](Stage_A\data\insert commands)
+#### 🔗 קישורים לקבצים:
+- [insert_devices.sql](Stage_A/data/insert%20commands/insert_devices.sql)
+- [insert_zones.sql](Stage_A/data/insert%20commands/insert_zones.sql)
+- [insert_repairs.sql](Stage_A/data/insert%20commands/insert_repairs.sql)
 
 **3. יצירת סקריפט בפייתון**  
 יצרנו נתונים בעזרת סקריפט פייתון לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
