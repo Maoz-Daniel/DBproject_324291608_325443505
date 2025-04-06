@@ -44,7 +44,7 @@
 
 ### ERD
 
-![ERD](Stage_A\ERD_and_DSD\ERD.png)
+![ERD](Stage_A/ERD_and_DSD/ERD.png)
 
 
 
