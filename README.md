@@ -100,3 +100,12 @@
 - [insert_exit_record.py](Stage_A/data/python%20scripts/exit_record/insert_exit_record.py)
 ## גיבוי
 קובץ הגיבוי נשמר עם תאריך הגיבוי 
+![צילום מסך של פעולת הגיבוי](Stage_A/backup/backup.png)  
+[ הורדת קובץ הגיבוי (backup1_642025)](Stage_A/backup/backup1_642025)
+
+---
+
+##### 🔁 פעולת שחזור:
+
+![צילום מסך של פעולת השחזור](Stage_A/backup/restore.png)
+
