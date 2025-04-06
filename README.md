@@ -75,7 +75,7 @@
 - [קובץ מכשירי גישה (accessDevice.csv)](Stage_A\data\csv\accessDevice\accessDevice.csv)
 - [קובץ אזורים (zone.csv)](Stage_A\data\csv\zone\zone.csv)
 - [קובץ תיקונים (repair.csv)](Stage_A\data\csv\repair\repair.csv)
-![inserts](Stage_A/data/csv/insert_csv_device_repair_zone.png)
+![inserts](Stage_A/data/csv/insert_csv_device_repair_zone_gym.png)
 
 
 
