@@ -66,15 +66,23 @@
 **1. Mockaroo**  
 יצרנו את הנתונים בצורה רנדומלית באתר עבור הסכמה של חדר כושר והעלנו את הקובץ ישירות  
 
-_(מקום לצילום מסך של Mockaroo)_  
-[קישור לקובץ ה־CSV]
+![צילום מסך של Mockaroo](Stage_A/data/mockaroo/gym_mockaroo.png)
+
+[📄 הורדת קובץ ה־CSV – gym_400.csv](Stage_A/data/mockaroo/gym_400.csv)
 
 **2. הכנסת נתונים מקבצים**  
 כתבנו קוד בפייתון שיוצר דאטה עבור הסכמות של מכשירי גישה, אזורים ותיקון, ומעביר את הנתונים לקובץ CSV, אותו העלינו ישירות ל־Postgres.  
-[הוסף כאן קישור לקבצי CSV]
+- [קובץ מכשירי גישה (accessDevice.csv)](Stage_A\data\csv\accessDevice\accessDevice.csv)
+- [קובץ אזורים (zone.csv)](Stage_A\data\csv\zone\zone.csv)
+- [קובץ תיקונים (repair.csv)](Stage_A\data\csv\repair\repair.csv)
+- 
+- ![צילום מסך של ההכנסות](Stage_A\data\csv\insert_csv_device_repair_zone.png)
+
+
+
 
 בנוסף, הכנסנו בצורה ידנית את פקודות ה־INSERT עבור מנויים, אנשים ועובדי תחזוקה.  
-[הוסף כאן קישור לקבצי INSERT]
+- [קבצי הכנסה (insert commands)](Stage_A\data\insert commands)
 
 **3. יצירת סקריפט בפייתון**  
 יצרנו נתונים בעזרת סקריפט פייתון לתוך קובץ CSV והעלינו אותם ישירות ל־Postgres מתוך הסקריפט.  
