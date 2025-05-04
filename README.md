@@ -405,16 +405,21 @@
 להלן הדגמה של תהליך ביצוע עדכון ושמירתו:
 
 - הצגת הנתון המקורי:
+
    ![before_change](Stage_B/Commit_and_Rollback/commit/before_change.png)
 
 -  על רשומה מסוימת בטבלת `person`:
+
    ![update](Stage_B/Commit_and_Rollback/commit/update_person_74.png)
 
 - הצגת נתונים לאחר ה־UPDATE ולפני ה־COMMIT (עדיין ניתן לבטל):
+
    ![show_update](Stage_B/Commit_and_Rollback/commit/show_update.png)
 
 - הרצת פקודת `COMMIT` – שמירת השינוי באופן קבוע:
+
    ![commit](Stage_B/Commit_and_Rollback/commit/commit.png)
 
 - מצב בסיס הנתונים לאחר ה־COMMIT – השינוי נשמר ואינו ניתן לביטול:
+
    ![after_commit](Stage_B/Commit_and_Rollback/commit/after_commit.png)
