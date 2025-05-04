@@ -369,15 +369,7 @@
 
 ###  אילוץ 1: אימות שדה `contactInfo` בטבלת `maintenanceWorker`
 
-```sql
-ALTER TABLE maintenanceWorker
-ADD CONSTRAINT valid_contact
-CHECK (
-    contactInfo ~ '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' OR 
-    contactInfo ~ '^\+?[0-9]{10,15}$'
-);
 
-```
 **תיאור שגיאה:**  
 לאחר הוספת האילוץ, ניסינו להזין ערך שאינו כתובת מייל תקינה ואינו מספר טלפון חוקי (לדוגמה: מחרוזת בעברית).  
 המערכת חסמה את ההכנסה וזרקה שגיאת `CHECK CONSTRAINT` כפי שצפוי.
