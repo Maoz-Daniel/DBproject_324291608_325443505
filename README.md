@@ -402,19 +402,19 @@
 
 
 ## COMMIT – שמירת שינויים בבסיס הנתונים
-
+להלן הדגמה של תהליך ביצוע עדכון ושמירתו:
 
 1. **מצב לפני השינוי** – הצגת הנתון המקורי:
-   ![before_change](Stage_B/Commit and Rollback/commit/before_change.png)
+   ![before_change](Stage_B/Commit_and_Rollback/commit/before_change.png)
 
 2. **ביצוע פקודת UPDATE** על רשומה מסוימת בטבלת `person`:
-   ![update](Stage_B/Commit and Rollback/commit/update_person_74.png)
+   ![update](Stage_B/Commit_and_Rollback/commit/update_person_74.png)
 
 3. **הצגת נתונים לאחר ה־UPDATE ולפני ה־COMMIT** (עדיין ניתן לבטל):
-   ![show_update](Stage_B/Commit and Rollback/commit/show_update.png)
+   ![show_update](Stage_B/Commit_and_Rollback/commit/show_update.png)
 
 4. **הרצת פקודת `COMMIT`** – שמירת השינוי באופן קבוע:
-   ![commit](Stage_B/Commit and Rollback/commit/commit.png)
+   ![commit](Stage_B/Commit_and_Rollback/commit/commit.png)
 
 5. **מצב בסיס הנתונים לאחר ה־COMMIT** – השינוי נשמר ואינו ניתן לביטול:
-   ![after_commit](Stage_B/Commit and Rollback/commit/after_commit.png)
+   ![after_commit](Stage_B/Commit_and_Rollback/commit/after_commit.png)
