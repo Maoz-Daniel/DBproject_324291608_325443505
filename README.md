@@ -264,14 +264,14 @@
 
 
 
-#### ✅ שאילתא 2: סימון מנויים לא פעילים שלא נכנסו מעולם כ־'Expired'
+####  שאילתא 2: סימון מנויים לא פעילים שלא נכנסו מעולם כ־'Expired'
 
-- 📄 קובץ השאילתא: [update_2.sql](Stage_B/Updates/update_2/update_2.sql)  
-- 📸 צילום לפני העדכון:  
+-  קובץ השאילתא: [update_2.sql](Stage_B/Updates/update_2/update_2.sql)  
+-  צילום לפני העדכון:  
   ![before_update_2](Stage_B/Updates/update_2/before_2.png)
-- ⚙️ צילום הרצת העדכון:  
+-  צילום הרצת העדכון:  
   ![action_update_2](Stage_B/Updates/update_2/action_2.png)
-- 📸 צילום לאחר העדכון:  
+-  צילום לאחר העדכון:  
   ![after_update_2](Stage_B/Updates/update_2/after_2.png)
 
 **מה השאילתא עושה:**  
@@ -279,3 +279,22 @@
 
 **הרעיון שלה:**  
 לסמן מנויים ישנים ולא פעילים ככאלה שתוקף המנוי שלהם פג, לצורך ניקוי מידע ותחזוקת נתונים.
+
+
+---
+
+####  שאילתא 3: השבתת מנויים שלא הגיעו לאחרונה
+
+-  קובץ השאילתא: [update_3.sql](Stage_B/Updates/update_3/update_3.sql)  
+-  צילום לפני העדכון:  
+  ![before_update_3](Stage_B/Updates/update_3/before_3.png)
+-  צילום הרצת העדכון:  
+  ![action_update_3](Stage_B/Updates/update_3/action_3.png)
+-  צילום לאחר העדכון:  
+  ![after_update_3](Stage_B/Updates/update_3/after_3.png)
+
+**מה השאילתא עושה:**  
+מעדכנת את שדה `isActive` ל־FALSE עבור מנויים שביצעו לפחות 3 כניסות, אך הפעם האחרונה שבה נכנסו הייתה לפני יותר משלושה חודשים.
+
+**הרעיון שלה:**  
+להשבית מנויים שהיו פעילים בעבר אך לא הגיעו זמן רב, לצורך ניהול מדויק של סטטוס החברות.
