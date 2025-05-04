@@ -375,4 +375,4 @@
 המערכת חסמה את ההכנסה וזרקה שגיאת `CHECK CONSTRAINT` כפי שצפוי.
 
 -  צילום לנסיון הכנסה:  
-  ![1](Stage_B\Constraints\errors\1.png)
+  ![1](Stage_B/Constraints/errors/1.png)
