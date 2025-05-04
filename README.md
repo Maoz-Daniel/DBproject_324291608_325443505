@@ -246,14 +246,14 @@
 
 ---
 
-#### ✅ שאילתא 1: עדכון סוג החברות למנויים פעילים במיוחד
+####  שאילתא 1: עדכון סוג החברות למנויים פעילים במיוחד
 
-- 📄 קובץ השאילתא: [update_1.sql](Stage_B/Updates/update_1/update_1.sql)  
-- 📸 צילום לפני העדכון:  
+-  קובץ השאילתא: [update_1.sql](Stage_B/Updates/update_1/update_1.sql)  
+-  צילום לפני העדכון:  
   ![before_update_1](Stage_B/Updates/update_1/before_1.png)
-- ⚙️ צילום הרצת העדכון:  
+-  צילום הרצת העדכון:  
   ![action_update_1](Stage_B/Updates/update_1/action_1.png)
-- 📸 צילום לאחר העדכון:  
+-  צילום לאחר העדכון:  
   ![after_update_1](Stage_B/Updates/update_1/after_1.png)
 
 **מה השאילתא עושה:**  
@@ -261,3 +261,21 @@
 
 **הרעיון שלה:**  
 לשדרג אוטומטית את סוג החברות למשתמשים פעילים במיוחד – כהוקרה, שיפור שירות או תמריץ.
+
+
+
+#### ✅ שאילתא 2: סימון מנויים לא פעילים שלא נכנסו מעולם כ־'Expired'
+
+- 📄 קובץ השאילתא: [update_2.sql](Stage_B/Updates/update_2/update_2.sql)  
+- 📸 צילום לפני העדכון:  
+  ![before_update_2](Stage_B/Updates/update_2/before_2.png)
+- ⚙️ צילום הרצת העדכון:  
+  ![action_update_2](Stage_B/Updates/update_2/action_2.png)
+- 📸 צילום לאחר העדכון:  
+  ![after_update_2](Stage_B/Updates/update_2/after_2.png)
+
+**מה השאילתא עושה:**  
+מעדכנת את סוג החברות של כל המנויים שאינם פעילים (`isActive = FALSE`) ושמעולם לא נכנסו לחדר כושר (כלומר, אין להם רשומת כניסה) – ל־'Expired'.
+
+**הרעיון שלה:**  
+לסמן מנויים ישנים ולא פעילים ככאלה שתוקף המנוי שלהם פג, לצורך ניקוי מידע ותחזוקת נתונים.

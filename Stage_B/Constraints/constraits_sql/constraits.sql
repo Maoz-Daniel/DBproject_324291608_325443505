@@ -6,17 +6,17 @@ CHECK (
 );
 
 ALTER TABLE member
-ADD CONSTRAINT valid_membership_type
+ADD CONSTRAINT member_membershiptype_check
 CHECK (
     membershipType IN (
         'Monthly',
         'Annual',
         'Quarterly',
         'Daily',
-        'Personal Training'
+        'Personal Training',
+        'Expired'
     )
 );
-
 ALTER TABLE entryRecord
 ADD CONSTRAINT valid_entry_time
 CHECK (entryTime <= CURRENT_TIMESTAMP);
