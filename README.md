@@ -423,3 +423,23 @@
 - מצב בסיס הנתונים לאחר ה־COMMIT – השינוי נשמר ואינו ניתן לביטול:
 
    ![after_commit](Stage_B/Commit_and_Rollback/commit/after_commit.png)
+
+
+## ROLLBACK – ביטול שינויים בבסיס הנתונים
+
+להלן הדגמה של תהליך הוספת רשומה חדשה וביטולה:
+
+- מצב בסיס הנתונים לפני ההוספה:  
+  ![before_add](Stage_B/Commit_and_Rollback/rollback/before_add.png)
+
+- ביצוע `INSERT` של אדם חדש לטבלת `person`:  
+  ![insert](Stage_B/Commit_and_Rollback/rollback/insert_new_person.png)
+
+- הצגת הנתון החדש לאחר ההוספה (לפני `COMMIT`):  
+  ![show_new](Stage_B/Commit_and_Rollback/rollback/show_the_new_person.png)
+
+- ביצוע `ROLLBACK` – ביטול ההוספה:  
+  ![rollback](Stage_B/Commit_and_Rollback/rollback/rollback.png)
+
+- מצב בסיס הנתונים לאחר ה־ROLLBACK – הרשומה בוטלה ולא נשמרה:  
+  ![after_rollback](Stage_B/Commit_and_Rollback/rollback/after_rollback.png)
