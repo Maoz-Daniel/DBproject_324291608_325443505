@@ -491,7 +491,7 @@
 - המפתח של `repair` עכשיו הוא `jobID`, ולא השלישייה שהייתה בשימוש קודם.
 - איחדנו לתוך `job` את השדות המשותפים שהופיעו ביישויות הקודמות: `date`, `cost`, ו־`specialNotes`. שדה `cost` הועבר ל־`job`,כך שבעתיד נוכל להוסיף מחיר גם לתיקון `cost`.
 
-#### Supplier יורש מ־Person
+### Supplier יורש מ־Person
 
 ---
 
@@ -524,6 +524,71 @@
 
 **הסבר:**  
 הטבלה כללה את השדות `(supplier_id, name, contact_number)`.הגדרנו את `personID` כ־PRIMARY KEY של `supplier`, ויצרנו FOREIGN KEY אל הטבלה `person`, כדי להשלים את המעבר מ־`supplier` כיישות עצמאית לישות יורשת של `person`.  
+
+## יצירת ישות Job והגדרת תתי-ישויות
+
+---
+
+- ![1](Stage_C/Integrate/job_and_repair_maintenence/1.png)
+
+**הסבר:**  
+יצרנו ישות `job` שמרכזת את המידע הכללי על פעולת תיקון או תחזוקה,  
+ואת הטבלאות `repair_new` ו־`maintenance_new` עם מפתחות זרים המצביעים אליה.
+
+---
+
+- ![2](Stage_C/Integrate/job_and_repair_maintenence/2.png)
+
+**הסבר:**  
+הכנסנו את הנתונים הקיימים בטבלת `repair` (שכבר קיימת) אל הטבלה החדשה `job`,  
+כדי שכל פעולה שמופיעה כ־`repair` תוכל להתקשר ל־`jobID`.
+
+---
+
+- ![3](Stage_C/Integrate/job_and_repair_maintenence/3.png)
+
+**הסבר:**  
+התאמנו בין השורות של `repair` ל־`job` לפי `ROW_NUMBER`,  
+והכנסנו לטבלה `repair_new`, מכיוון שאין מפתח טבעי ייחודי,  
+ואין באמת משמעות למספר `job` כל עוד שומרים על יחס נכון.
+
+---
+
+- ![4](Stage_C/Integrate/job_and_repair_maintenence/4.png)
+
+**הסבר:**  
+שמרנו ב־`job` את המידע הכללי עבור כל רשומה בטבלת `maintenance`.
+
+---
+
+- ![5](Stage_C/Integrate/job_and_repair_maintenence/5.png)
+
+**הסבר:**  
+כמו בשלב של `repair`, יצרנו התאמה בין רשומות `maintenance` לבין רשומות `job`  
+תוך שימוש ב־`ROW_NUMBER`, והכנסנו לטבלה `maintenance_new`.
+
+---
+
+- ![6](Stage_C/Integrate/job_and_repair_maintenence/6.png)
+
+**הסבר:**  
+קבענו שמפתח ראשי ב־`repair_new` וב־`maintenance_new` חייב להתקשר לרשומה חוקית בטבלת `job`.
+
+---
+
+- ![7](Stage_C/Integrate/job_and_repair_maintenence/7.png)
+
+**הסבר:**  
+מחקנו את הטבלאות הישנות `repair` ו־`maintenance`,  
+ושינינו את שמות החדשות כך שישתלבו במערכת בדיוק כפי שהיו קודם.
+
+---
+
+- ![8](Stage_C/Integrate/job_and_repair_maintenence/8.png)
+
+**הסבר:**  
+עכשיו חילקנו את העבודות שהן `maintenance` ל־`maintenanceWorkers` אקראיים,  
+מכיוון שבבסיס הנתונים הקודם הן לא היו משויכות ישירות לעובד.
 
   
 
