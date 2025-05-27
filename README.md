@@ -488,5 +488,42 @@
 - החלטנו להוריד את השדות `contactNumber`, לפצל את השדה `name` לשדות `firstName` ו־`lastName` (כפי שהם בטבלת `person`), ולוותר על `supplierID` – עכשיו המפתח של כל ספק הוא `personID`.
 - בעבר היו ישות `maintenance` ויחס `repair`, מכיוון ששתיהן מייצגות סוגים של עבודות – יצרנו ישות חדשה בשם `job`.
 - הפכנו את היחס `repair` לישות עצמאית – `repair`, שכעת יורשת מהישות `job`, כמו גם `maintenance`.
-- המפתח של `repair` כיום הוא `jobID`, ולא השלישייה שהייתה בשימוש קודם.
-- איחדנו לתוך `job` את השדות המשותפים שהופיעו ביישויות הקודמות: `date`, `cost`, ו־`specialNotes`. שדה `cost` הועבר ל־`job`, כך שבעתיד אם יתווסף סוג תיקון נוסף – גם לו יהיה שדה `cost`.
+- המפתח של `repair` עכשיו הוא `jobID`, ולא השלישייה שהייתה בשימוש קודם.
+- איחדנו לתוך `job` את השדות המשותפים שהופיעו ביישויות הקודמות: `date`, `cost`, ו־`specialNotes`. שדה `cost` הועבר ל־`job`,כך שבעתיד נוכל להוסיף מחיר גם לתיקון `cost`.
+
+#### Supplier יורש מ־Person
+
+---
+
+- ![step1](Stage_C/Integrate/Supplier_to_Person/1.png)
+
+**הסבר:**  
+חילקנו את השדה `name` לשדות `firstName` ו־`lastName`.  
+יצרנו מזהה חדש `newPersonID` – מספר רץ שמתחיל מ־800, מכיוון שהמפתחות בטבלת `person` נגמרו ב־800.  
+הוספנו את כל הספקים לטבלת `person`, תוך השמת ערך `NULL` בשדה `dateOfBirth`.
+
+---
+
+- ![step2](Stage_C/Integrate/Supplier_to_Person/2.png)
+
+**הסבר:**  
+הוספנו לטבלת `supplier` עמודה חדשה בשם `personID`,  
+ועידכנו אותה כך שתתאים לערכים שנוספו בטבלת `person` בשלב הקודם.
+
+---
+
+- ![step3](Stage_C/Integrate/Supplier_to_Person/3.png)
+
+**הסבר:**  
+מכיוון שטבלת `equipment_supplier` קשורה ל־`supplier`,  
+יש לוודא שהיא מצביעה כעת על `personID` החדש — שהוא המפתח החדש של `supplier`.
+
+---
+
+- ![step4](Stage_C/Integrate/Supplier_to_Person/4.png)
+
+**הסבר:**  
+הטבלה כללה את השדות `(supplier_id, name, contact_number)`.  
+הגדרנו את `personID` כ־PRIMARY KEY של `supplier`,  
+ויצרנו FOREIGN KEY אל הטבלה `person`,  
+כדי להשלים את המעבר מ־`supplier` כיישות עצמאית לישות יורשת של `person`.
