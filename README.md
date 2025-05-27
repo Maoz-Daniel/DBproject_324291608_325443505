@@ -615,3 +615,21 @@ GROUP BY z.zoneID, z.zoneType, g.name;
 ####  המבט לאחר יצירתו
 - ![select](Stage_C/Views/View_1/Select1.png)
 
+#### שאילתה 1: אזורים עם יותר משתי כניסות
+
+
+
+```sql
+SELECT * 
+FROM Zone_Visit_Stats
+WHERE entryCount > 2;
+```
+![query1](Stage_C/Views/View_1/query1.png)
+
+#### שאילתה 2: מספר אזורים לפי סוג אזור
+```sql
+SELECT zoneType, COUNT(*) AS numZones
+FROM Zone_Visit_Stats
+GROUP BY zoneType;
+```
+![query2](Stage_C/Views/View_1/query2.png)
