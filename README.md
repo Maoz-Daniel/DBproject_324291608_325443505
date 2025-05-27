@@ -663,7 +663,7 @@ JOIN Supplier s ON es.personid = s.personid;
 ```sql
 SELECT *
 FROM Equipment_Supply_Info
-WHERE supply_date > '2025
+WHERE supply_date > '2025-01-01';
 ```
 - ![query3](Stage_C/Views/View_2/query1.png)
 
