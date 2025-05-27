@@ -471,3 +471,22 @@
 - DSD תרשים:
   
   ![other_DSD](Stage_C/ERD_&_DSD/other_department/other_DSD.png)
+
+#### לאחר אינטגרציה עם המחלקה שלנו:
+
+- ERD לאחר אינטגרציה:
+  
+  ![merged_ERD](Stage_C/ERD_&_DSD/merged/merged_ERD.png)
+
+- DSD לאחר אינטגרציה:
+  
+  ![merged_DSD](Stage_C/ERD_&_DSD/merged/merged_DSD.png)
+
+#### החלטות בשלב האינטגרציה:
+
+- ישות `supplier` היא סוג של `person`, ולכן העברנו אותה להיות יורשת ממנו.
+- החלטנו להוריד את השדות `contactNumber`, לפצל את השדה `name` לשדות `firstName` ו־`lastName` (כפי שהם בטבלת `person`), ולוותר על `supplierID` – עכשיו המפתח של כל ספק הוא `personID`.
+- בעבר היו ישות `maintenance` ויחס `repair`, מכיוון ששתיהן מייצגות סוגים של עבודות – יצרנו ישות חדשה בשם `job`.
+- הפכנו את היחס `repair` לישות עצמאית – `repair`, שכעת יורשת מהישות `job`, כמו גם `maintenance`.
+- המפתח של `repair` כיום הוא `jobID`, ולא השלישייה שהייתה בשימוש קודם.
+- איחדנו לתוך `job` את השדות המשותפים שהופיעו ביישויות הקודמות: `date`, `cost`, ו־`specialNotes`. שדה `cost` הועבר ל־`job`, כך שבעתיד אם יתווסף סוג תיקון נוסף – גם לו יהיה שדה `cost`.
