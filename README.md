@@ -459,3 +459,15 @@
 ## שלב ג: אינטגרציה ומבטים
 
 ### אינטגרציה
+
+ביצענו אינטגרציה עם **מחלקת ניהול וארגון ציוד חדר כושר**
+
+#### התרשימים של המחלקה:
+
+- ERD תרשים:
+  
+  ![other_ERD](Stage_C/ERD_&_DSD/other_department/other_ERD.png)
+
+- DSD תרשים:
+  
+  ![other_DSD](Stage_C/ERD_&_DSD/other_department/other_DSD.png)
