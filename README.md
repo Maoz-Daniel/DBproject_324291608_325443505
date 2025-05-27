@@ -613,5 +613,5 @@ GROUP BY z.zoneID, z.zoneType, g.name;
 ```
 
 ####  המבט לאחר יצירתו
-- ![select](Stage_C\Views\View_1\Select1.png)
+- ![select](Stage_C/Views/View_1/Select1.png)
 
