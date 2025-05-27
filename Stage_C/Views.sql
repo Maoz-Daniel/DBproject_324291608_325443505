@@ -39,6 +39,7 @@ SELECT
     e.equipment_id,
     e.name AS equipment_name,
     e.category,
+    s.personid AS supplier_id,
     s.email AS supplier_email,
     s.address AS supplier_address,
     es.quantity,

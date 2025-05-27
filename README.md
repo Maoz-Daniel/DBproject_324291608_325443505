@@ -668,8 +668,9 @@ WHERE supply_date > '2025-01-01';
 - ![query3](Stage_C/Views/View_2/query1.png)
 
 #### שאילתה 2: סיכום כמות הציוד שסופקה לפי ספק
-```SELECT supplier_email, SUM(quantity) AS total_quantity
+```SELECT supplier_id, SUM(quantity) AS total_quantity
 FROM Equipment_Supply_Info
-GROUP BY supplier_email;
+GROUP BY supplier_id
+ORDER BY total_quantity DESC;
 ```
 - ![query4](Stage_C/Views/View_2/query2.png)
