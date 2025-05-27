@@ -633,3 +633,43 @@ FROM Zone_Visit_Stats
 GROUP BY zoneType;
 ```
 ![query2](Stage_C/Views/View_1/query2.png)
+
+### View 2: Equipment_Supply_Info
+
+מבט זה מציג מידע על ציוד שסופק למכון הכושר, כולל קטגוריית הציוד, כמות שסופקה, תאריך האספקה, וכן פרטי יצירת קשר של הספק שסיפק את הציוד.  
+
+
+####  יצירת המבט:
+
+```sql
+CREATE VIEW Equipment_Supply_Info AS
+SELECT 
+    e.equipment_id,
+    e.name AS equipment_name,
+    e.category,
+    s.email AS supplier_email,
+    s.address AS supplier_address,
+    es.quantity,
+    es.supply_date
+FROM Equipment e
+JOIN Equipment_Supplier es ON e.equipment_id = es.equipment_id
+JOIN Supplier s ON es.personid = s.personid;
+```
+####  המבט לאחר יצירתו
+- ![select1](Stage_C/Views/View_2/Select2.png)
+
+#### שאילתה 1: ציוד שסופק לאחר 1 בינואר 2025
+
+```sql
+SELECT *
+FROM Equipment_Supply_Info
+WHERE supply_date > '2025
+```
+- ![query3](Stage_C/Views/View_2/query1.png)
+
+#### שאילתה 2: סיכום כמות הציוד שסופקה לפי ספק
+```SELECT supplier_email, SUM(quantity) AS total_quantity
+FROM Equipment_Supply_Info
+GROUP BY supplier_email;
+```
+- ![query4](Stage_C/Views/View_2/query2.png)
