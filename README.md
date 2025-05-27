@@ -590,5 +590,28 @@
 עכשיו חילקנו את העבודות שהן `maintenance` ל־`maintenanceWorkers` אקראיים,  
 מכיוון שבבסיס הנתונים הקודם הן לא היו משויכות ישירות לעובד.
 
-  
+## מבטים (Views)
+
+
+###  View 1: Zone_Visit_Stats
+
+מבט זה מציג עבור כל אזור במכון הכושר את מספר הכניסות אליו, יחד עם שם חדר הכושר וסוג האזור.  
+
+####  יצירת המבט:
+
+```sql
+CREATE VIEW Zone_Visit_Stats AS
+SELECT 
+    z.zoneID,
+    z.zoneType,
+    g.name AS gymName,
+    COUNT(er.personID) AS entryCount
+FROM zone z
+JOIN gym g ON z.gymID = g.gymID
+LEFT JOIN entryRecord er ON z.zoneID = er.zoneID AND z.gymID = er.gymID
+GROUP BY z.zoneID, z.zoneType, g.name;
+```
+
+####  המבט לאחר יצירתו
+- ![select](Stage_C\Views\View_1\Select1.png)
 
