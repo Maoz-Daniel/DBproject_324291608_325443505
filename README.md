@@ -24,7 +24,7 @@
 - [שלב ג: אינטגרציה ומבטים](#שלב-ג-אינטגרציה-ומבטים)
   - [אינטגרציה](#אינטגרציה)
   - [מבטים (Views)](#מבטים-views)
-  - [שלב ד: תכנות](#שלב-ד-תכנות)
+- [שלב ד: תכנות](#שלב-ד-תכנות)
   - [פונקציות](#פונקציות)
 
 
@@ -684,6 +684,9 @@ ORDER BY total_quantity DESC;
 מעל 6 שעות – CRITICAL
 מעל 3 שעות – WARNING
 אחרת – OK
+בפונקציה נעשה שימוש באלמנטים הבאים:
+Ref Cursor, שימוש ב־Cursor מפורש, טיפול ב־Exception, והסתעפות באמצעות IF ו־CASE.
+
 ```sql
 -- Returns a cursor with details of visits longer than a specified duration threshold
 CREATE OR REPLACE FUNCTION get_long_visits_cursor(duration_threshold INTERVAL)
