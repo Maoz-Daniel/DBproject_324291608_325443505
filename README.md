@@ -723,3 +723,51 @@ SELECT get_long_visits_cursor(INTERVAL '3 hours');
 FETCH ALL FROM ref;
 ```
 - ![image1](Stage_D/images/get_long_visit_cursor.png)
+
+  
+  הפונקציה מחשבת את סיכום השכר שיש לשלם לכל עובד שביצע עבודות מתוך טבלת job.
+במקרים שבהם עלות העבודה (cost) לא צוינה (NULL), הפונקציה מעדכנת את הערך ל־60 שקלים.
+לאחר מכן היא מחזירה לכל עובד את מספר העבודות שביצע ואת סך השכר הכולל.
+אם אין כלל עבודות במערכת, תיזרק חריגה.
+  
+  בפונקציה נעשה שימוש באלמנטים הבאים:
+פקודות DML לעדכון ערכי שכר חסרים, טיפול ב־Exception באמצעות RAISE EXCEPTION, והסתעפות עם תנאי IF.
+בנוסף, הפונקציה מחזירה טבלה מלאה (Structured Table) שמייצגת רשומות עובדים עם סיכום עבודות ושכר.
+
+```sql
+-- Function to get a summary of employees' salaries
+CREATE OR REPLACE FUNCTION get_employees_salary_summary()
+RETURNS TABLE (
+    personID INT,
+    firstName VARCHAR(50),
+    lastName VARCHAR(50),
+    num_jobs BIGINT,
+    total_salary NUMERIC
+) AS $$
+BEGIN
+    -- raise an exception if there are no job records
+    IF NOT EXISTS (SELECT 1 FROM job) THEN
+        RAISE EXCEPTION 'No job records found in the system';
+    END IF;
+
+    -- update NULL salary values to 60 
+    UPDATE job
+    SET cost = 60
+    WHERE cost IS NULL;
+
+    -- return salary summary for each employee
+    RETURN QUERY
+    SELECT
+        p.personID,
+        p.firstName,
+        p.lastName,
+        COUNT(j.jobID) AS num_jobs,
+        SUM(j.cost) AS total_salary
+    FROM job j
+    JOIN person p ON j.personID = p.personID
+    GROUP BY p.personID, p.firstName, p.lastName
+    ORDER BY total_salary DESC;
+END;
+$$ LANGUAGE plpgsql;
+```
+- ![image2](Stage_D/images/get_employees_salary_summary.png)
