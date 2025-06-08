@@ -683,7 +683,8 @@ ORDER BY total_quantity DESC;
 השאילתה מחפשת רשומות שבהן אדם שהה בחדר הכושר במשך זמן העולה על ערך סף שנקבע כפרמטר. לכל שהות שנמצאה, השאילתה מחשבת את משך השהות בפועל (duration), ומסווגת את רמת הסיכון (riskLevel) לפי אורך השהות:
 מעל 6 שעות – CRITICAL
 מעל 3 שעות – WARNING
-אחרת – OK
+אחרת – OK  
+
 בפונקציה נעשה שימוש באלמנטים הבאים:
 Ref Cursor, שימוש ב־Cursor מפורש, טיפול ב־Exception, והסתעפות באמצעות IF ו־CASE.
 
@@ -700,13 +701,7 @@ BEGIN
 
     OPEN ref FOR
     SELECT
-        ER.personid,
-        P.firstname,
-        P.lastname,
-        ER.entrytime,
-        XR.exittime,
-        XR.exittime - ER.entrytime AS duration,
-        ER.gymid,
+        ER.personid,P.firstname,P.lastname,ER.entrytime,XR.exittime, XR.exittime - ER.entrytime AS duration,ER.gymid,
         CASE
             WHEN XR.exittime - ER.entrytime > INTERVAL '6 hours' THEN 'CRITICAL'
             WHEN XR.exittime - ER.entrytime > INTERVAL '3 hours' THEN 'WARNING'
