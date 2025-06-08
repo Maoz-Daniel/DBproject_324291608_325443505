@@ -716,3 +716,10 @@ BEGIN
     RETURN ref;
 END;
 $$ LANGUAGE plpgsql;
+```
+מכיוון שהפונקציה מחזירה Ref Cursor, יש לבצע שתי פקודות להצגת התוצאה:
+```sql
+SELECT get_long_visits_cursor(INTERVAL '3 hours');
+FETCH ALL FROM ref;
+```
+- ![image1](Stage_D/images/get_long_visit_cursor.png)
