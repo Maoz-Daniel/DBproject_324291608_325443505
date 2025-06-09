@@ -839,13 +839,14 @@ CALL update_jobs_cost_by_type('Inspection', 100);
     
   קודם כל נמחק את האילוץ הקיים: 
 
-    ```sql
+```sql
     ALTER TABLE member
 DROP CONSTRAINT member_membershiptype_check;
 ```
 
 לאחר מכן עדכון כל הערכים לערכים ללא תלות בזמן:
-  ```sql
+
+```sql
 UPDATE member SET membershipType = 'Standard'      WHERE membershipType = 'Monthly';
 UPDATE member SET membershipType = 'Basic'         WHERE membershipType = 'Daily';
 UPDATE member SET membershipType = 'Personalized'  WHERE membershipType = 'Personal Training';
