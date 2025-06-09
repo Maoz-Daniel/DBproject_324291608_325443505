@@ -837,14 +837,15 @@ CALL update_jobs_cost_by_type('Inspection', 100);
 לפני הפרוצדורה השנייה נעדכן את בסיס הנתונים:
   נחליף את הערכים בטבלה member בשדה membershiptype לערכים ללא תלות בזמן
     
-    קודם כל נמחק את האילוץ הקיים: 
+  קודם כל נמחק את האילוץ הקיים: 
+
     ```sql
     ALTER TABLE member
 DROP CONSTRAINT member_membershiptype_check;
 ```
 
 לאחר מכן עדכון כל הערכים לערכים ללא תלות בזמן:
-    ```sql
+  ```sql
 UPDATE member SET membershipType = 'Standard'      WHERE membershipType = 'Monthly';
 UPDATE member SET membershipType = 'Basic'         WHERE membershipType = 'Daily';
 UPDATE member SET membershipType = 'Personalized'  WHERE membershipType = 'Personal Training';
@@ -853,7 +854,7 @@ UPDATE member SET membershipType = 'Premium'       WHERE membershipType = 'Annua
 UPDATE member SET membershipType = 'Extended'      WHERE membershipType = 'Quarterly';
 ```
 לאחר מכן ניצור אילוץ חדש:
-  ```sql
+```sql
 ALTER TABLE member
 ADD CONSTRAINT valid_membership_type
 CHECK (
