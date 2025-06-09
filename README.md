@@ -725,7 +725,7 @@ FETCH ALL FROM ref;
 ```
 - ![image1](Stage_D/images/get_long_visit_cursor.png)
 
-  #### פונקציה 2
+#### פונקציה 2
   הפונקציה מחשבת את סיכום השכר שיש לשלם לכל עובד שביצע עבודות מתוך טבלת job.
 במקרים שבהם עלות העבודה (cost) לא צוינה (NULL), הפונקציה מעדכנת את הערך ל־60 שקלים.
 לאחר מכן היא מחזירה לכל עובד את מספר העבודות שביצע ואת סך השכר הכולל.
@@ -772,3 +772,60 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 - ![image2](Stage_D/images/get_employees_salary_summary.png)
+
+#### פרוצדורה 1
+הפרוצדורה מעדכנת את עלות העבודות (cost) עבור שירותים מסוג מסוים, לפי ערך שמוזן כפרמטר. אם תאריך העבודה בין ה־1 ל־15 בחודש, היא מוסיפה 50% לערך זה. במידה ואין עבודות מהסוג הנתון, נזרקת חריגה.
+  
+  האלמנטים בהם נעשה שימוש:
+Exception, הסתעפות (IF, CASE)לולאה, (FOR)רקורד, (RECORD)פקודת, DML (UPDATE)
+
+```sql
+-- procedure to update job costs based on service type and date condition
+CREATE OR REPLACE PROCEDURE update_jobs_cost_by_type(
+    IN service_type_input TEXT,
+    IN base_cost NUMERIC
+)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    rec RECORD;
+    updated_count INT := 0;
+BEGIN
+    -- check if there are any matching jobs
+    IF NOT EXISTS (
+        SELECT 1 FROM job WHERE servicetype = service_type_input
+    ) THEN
+        RAISE EXCEPTION 'No jobs found with service type: %', service_type_input;
+    END IF;
+
+    -- loop through each matching job and update cost conditionally
+    FOR rec IN
+        SELECT jobid, date
+        FROM job
+        WHERE servicetype = service_type_input
+    LOOP
+        IF EXTRACT(DAY FROM rec.date) BETWEEN 1 AND 15 THEN
+            UPDATE job
+            SET cost = base_cost * 1.5
+            WHERE jobid = rec.jobid;
+        ELSE
+            UPDATE job
+            SET cost = base_cost
+            WHERE jobid = rec.jobid;
+        END IF;
+
+        updated_count := updated_count + 1;
+    END LOOP;
+
+    RAISE NOTICE 'Updated % jobs of type %', updated_count, service_type_input;
+END;
+$$;
+```
+לפני הפעלת הפרוצדורה:
+- ![procedure1](Stage_D/images/update_jobs_cost_by_type_before.png)
+
+לאחר הפעלת הפרוצדורה:
+```sql
+CALL update_jobs_cost_by_type('Inspection', 100);
+```
+- ![procedure1.1](Stage_D/images/update_jobs_cost_by_type_after.png)
