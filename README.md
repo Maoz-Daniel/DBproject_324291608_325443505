@@ -832,3 +832,94 @@ $$;
 CALL update_jobs_cost_by_type('Inspection', 100);
 ```
 - ![procedure1.1](Stage_D/images/update_jobs_cost_by_type_after.png)
+
+
+לפני הפרוצדורה השנייה נעדכן את בסיס הנתונים:
+  נחליף את הערכים בטבלה member בשדה membershiptype לערכים ללא תלות בזמן
+    
+    קודם כל נמחק את האילוץ הקיים: 
+    ```sql
+    ALTER TABLE member
+DROP CONSTRAINT member_membershiptype_check;
+```
+
+לאחר מכן עדכון כל הערכים לערכים ללא תלות בזמן:
+    ```sql
+UPDATE member SET membershipType = 'Standard'      WHERE membershipType = 'Monthly';
+UPDATE member SET membershipType = 'Basic'         WHERE membershipType = 'Daily';
+UPDATE member SET membershipType = 'Personalized'  WHERE membershipType = 'Personal Training';
+UPDATE member SET membershipType = 'Visitor'       WHERE membershipType = 'Expired';
+UPDATE member SET membershipType = 'Premium'       WHERE membershipType = 'Annual';
+UPDATE member SET membershipType = 'Extended'      WHERE membershipType = 'Quarterly';
+```
+לאחר מכן ניצור אילוץ חדש:
+  ```sql
+ALTER TABLE member
+ADD CONSTRAINT valid_membership_type
+CHECK (
+    membershipType IN (
+        'Basic',
+        'Standard',
+        'Personalized',
+        'Premium',
+        'Extended',
+        'Visitor'
+    )
+);
+```
+#### פרוצדורה 2
+הפרוצדורה deactivate_old_members מקבלת מספר חודשים כפרמטר, ומאתרת את כל החברים בעלי סוג מנוי 'Basic' או 'Standard' שהצטרפו לפני יותר מהמספר הזה של חודשים, ועדיין פעילים. עבור כל אחד מהם, היא מעדכנת את הסטטוס שלו כלא-פעיל (isactive = false) ומציגה הודעה. אם לא נמצא אף חבר כזה, נזרקת שגיאה מתאימה.
+  
+  בפרוצדורה נעשה שימוש פקודת DML, הסתעפויות, לולאות, טיפול בשגיאות (Exception) ורשומות
+
+  ```sql
+-- This procedure deactivates members who have been active for more than a specified number of months.
+
+CREATE OR REPLACE PROCEDURE deactivate_old_members(months_threshold INT)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    rec RECORD;
+    updated_count INT := 0;
+BEGIN
+    -- validate input
+    IF months_threshold <= 0 THEN
+        RAISE EXCEPTION 'Invalid threshold: must be greater than 0. Given: %', months_threshold;
+    END IF;
+
+    -- loop over relevant members (joined with person to get names)
+    FOR rec IN
+    SELECT m.personid, p.firstname, p.lastname, m.memberstartdate
+    FROM member m
+    JOIN person p ON m.personid = p.personid
+    WHERE m.membershiptype IN ('Basic', 'Standard')
+      AND m.memberstartdate < CURRENT_DATE - make_interval(months := months_threshold)
+      AND m.isactive = true
+
+    LOOP
+        UPDATE member
+        SET isactive = false
+        WHERE personid = rec.personid;
+
+        updated_count := updated_count + 1;
+
+        RAISE NOTICE 'Deactivated: % % (%), joined on %',
+            rec.firstname, rec.lastname, rec.personid, rec.memberstartdate;
+    END LOOP;
+
+    -- if no members were updated, raise an exception
+    IF updated_count = 0 THEN
+        RAISE EXCEPTION 'No members found who meet the criteria for deactivation.';
+    END IF;
+END;
+$$;
+```
+לפני הפעלת הפרוצדורה:
+- ![procedure2](Stage_D/images/deactivate_old_members_before.png)
+
+לאחר הפעלת הפרוצדורה:
+```sql
+CALL deactivate_old_members(12);
+```
+- ![procedure2.1](Stage_D/images/deactivate_old_members_after.png)
+
