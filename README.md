@@ -27,6 +27,8 @@
 - [שלב ד: תכנות](#שלב-ד-תכנות)
   - [פונקציות](#פונקציות)
   - [פרוצדורות](#פרוצדורות)
+  - [טריגרים](#טריגרים)
+
 
 
 
@@ -924,4 +926,46 @@ $$;
 CALL deactivate_old_members(12);
 ```
 - ![procedure2.1](Stage_D/images/deactivate_old_members_after.png)
+
+### פרוצדורות
+
+#### טריגר 1
+הטריגר בודק בעת הוספת כניסה לטבלה entryrecord אם המשתמש הוא חבר פעיל. אם לא – הפעולה נחסמת ונזרקת שגיאה מתאימה.
+  
+  האלמנטים שהשתמשנו בהם:
+ הסתעפויות, Exception,  רשומות
+
+  הפונקציה של הטריגר:
+```sql
+-- This script creates a trigger to validate that a person is an active member before inserting an entry record.
+CREATE OR REPLACE FUNCTION validate_active_member()
+RETURNS TRIGGER AS $$
+DECLARE
+    active_status BOOLEAN;
+BEGIN
+    -- Check if the person is an active member
+    SELECT isactive INTO active_status
+    FROM member
+    WHERE personid = NEW.personid;
+
+    -- If the member is not active (or not found), raise an error
+    IF active_status IS DISTINCT FROM TRUE THEN
+        RAISE EXCEPTION 'Entry denied: Person % is not an active member.', NEW.personid;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+```
+הפעלת הטריגר:
+```sql
+-- Create the trigger to call the function before inserting into entryrecord
+CREATE TRIGGER trg_validate_entry_active_member
+BEFORE INSERT ON entryrecord
+FOR EACH ROW
+EXECUTE FUNCTION validate_active_member();
+```
+- ![triger1](Stage_D/images/validate_active_member.png)
+
+
 
