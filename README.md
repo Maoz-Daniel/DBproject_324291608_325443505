@@ -28,7 +28,7 @@
   - [פונקציות](#פונקציות)
   - [פרוצדורות](#פרוצדורות)
   - [טריגרים](#טריגרים)
-  - [תוכניות ראשיות](#תוכניות ראשיות)
+  - [תוכניות ראשיות](#תוכניות-ראשיות)
 
 
 
@@ -1019,7 +1019,7 @@ EXECUTE FUNCTION set_next_service_date();
 - ![triger2](Stage_D/images/set_next_service_date_before.png)
 - ![triger2.1](Stage_D/images/set_next_service_date_after.png)
 
-#### תוכניות ראשיות
+#### תוכניות-ראשיות
 #### תוכנית 1
 תוכנית זו מפעילה את הפונקציה get_long_visits_cursor לאיתור ביקורים ארוכים, ואת הפרוצדורה update_jobs_cost_by_type לעדכון עלות עבודות לפי סוג שירות.
 
