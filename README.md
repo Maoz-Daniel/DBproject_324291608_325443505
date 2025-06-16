@@ -1016,3 +1016,52 @@ EXECUTE FUNCTION set_next_service_date();
 ``` 
 - ![triger2](Stage_D/images/set_next_service_date_before.png)
 - ![triger2.1](Stage_D/images/set_next_service_date_after.png)
+
+#### תוכניות ראשיות
+#### תוכנית 1
+תוכנית זו מפעילה את הפונקציה get_long_visits_cursor לאיתור ביקורים ארוכים, ואת הפרוצדורה update_jobs_cost_by_type לעדכון עלות עבודות לפי סוג שירות.
+
+ ```sql
+
+BEGIN;
+
+-- create a cursor to fetch long visits
+SELECT get_long_visits_cursor(INTERVAL '3 hours');
+
+-- open the cursor
+FETCH ALL FROM ref;
+
+-- call the procedure to update long visits
+CALL update_jobs_cost_by_type('Inspection', 100);
+
+COMMIT;
+```
+
+- ![main_1](Stage_D/images/main_1.png)
+#### תוכנית 2
+לפני תוכנית 2, נעשה עדכון קטן בבסיס הנתונים כך שנוכל לראות שהתוכנית עובדת:
+ ```sql
+UPDATE member
+SET
+    membershipType = 'Basic',
+    memberStartDate = CURRENT_DATE - INTERVAL '19 months',
+    isActive = true
+WHERE personID = (
+    SELECT personID FROM member LIMIT 1
+);
+```
+תוכנית זו מפעילה את הפונקציה get_employees_salary_summary להצגת סיכום שכר עובדים, ואת הפרוצדורה deactivate_old_members לשינוי סטטוס מנויים ותיקים שאינם עומדים בקריטריונים.
+
+ ```sql
+
+BEGIN;
+
+-- selecting employees with salary summary
+SELECT * FROM get_employees_salary_summary();
+
+-- call the procedure to deactivate old members
+CALL deactivate_old_members(18);
+
+COMMIT;
+```
+- ![main_2](Stage_D/images/main_2.png)

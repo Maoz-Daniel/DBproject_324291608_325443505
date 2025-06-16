@@ -21,3 +21,14 @@ CHECK (
         'Visitor'
     )
 );
+
+
+--------------------------for the second main program--------------------------
+UPDATE member
+SET
+    membershipType = 'Basic',
+    memberStartDate = CURRENT_DATE - INTERVAL '19 months',
+    isActive = true
+WHERE personID = (
+    SELECT personID FROM member LIMIT 1
+);
