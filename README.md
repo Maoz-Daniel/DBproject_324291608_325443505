@@ -132,7 +132,7 @@
 
 ##### 🔁 פעולת שחזור:
 
-![צילום מסך של פעולת השחזור](Stage_A/backup/restore.png)
+![צילום מסך של פעולת השחזור](Stage_A/backup/restore_update.png)
 
 ## שלב ב: שאילתות
 
