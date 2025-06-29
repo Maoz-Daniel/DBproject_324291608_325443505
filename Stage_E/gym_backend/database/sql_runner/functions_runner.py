@@ -1,5 +1,5 @@
 from .sql_executor import execute_sql_file
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 def run_get_long_visits_cursor(duration_threshold):
@@ -39,7 +39,7 @@ def run_get_long_visits_cursor(duration_threshold):
         conn.close()
 
 
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 def run_get_employees_salary_summary():

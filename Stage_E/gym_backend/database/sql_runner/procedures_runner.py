@@ -1,5 +1,5 @@
 from .sql_executor import execute_sql_file
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 def run_deactivate_old_members(months_threshold):

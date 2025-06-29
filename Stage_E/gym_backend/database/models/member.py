@@ -1,4 +1,4 @@
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 class MemberManager:
@@ -6,11 +6,9 @@ class MemberManager:
         self.conn = get_connection()
         self.cursor = self.conn.cursor()
 
-    # CREATE
     def create_member(self, person_id, first_name, last_name, date_of_birth,
-                       member_start_date, membership_type, is_active=True):
+                  member_start_date, membership_type, is_active=True):
         try:
-            # יצירת Person
             self.cursor.execute(
                 """
                 INSERT INTO person (personid, firstname, lastname, dateofbirth)
@@ -19,7 +17,6 @@ class MemberManager:
                 (person_id, first_name, last_name, date_of_birth)
             )
 
-            # יצירת Member
             self.cursor.execute(
                 """
                 INSERT INTO member (personid, memberstartdate, membershiptype, isactive)
@@ -30,10 +27,12 @@ class MemberManager:
 
             self.conn.commit()
             print("✅ Member created successfully.")
+
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error creating member: {e}")
-
+            raise e  
+    
     # READ — חכם (הכל או לפי person_id)
     def read_members(self, person_id=None):
         try:

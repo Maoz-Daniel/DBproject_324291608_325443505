@@ -1,4 +1,4 @@
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 class ZoneManager:
@@ -22,32 +22,38 @@ class ZoneManager:
             self.conn.rollback()
             print(f"❌ Error creating zone: {e}")
 
-    # READ — דינמי (הכל או לפי מזהה)
     def read_zones(self, zone_id=None, gym_id=None):
         try:
+            query = """
+                SELECT 
+                    z.zoneid,
+                    z.gymid,
+                    z.zonetype,
+                    z.onlyformembers,
+                    z.isaccessible,
+                    g.name AS gymname,
+                    g.gymlocation AS city
+                FROM zone z
+                JOIN gym g ON z.gymid = g.gymid
+            """
+            params = []
+
             if zone_id is not None and gym_id is not None:
-                self.cursor.execute(
-                    """
-                    SELECT zoneid, gymid, zonetype, onlyformembers, isaccessible
-                    FROM zone
-                    WHERE zoneid = %s AND gymid = %s
-                    """,
-                    (zone_id, gym_id)
-                )
+                query += " WHERE z.zoneid = %s AND z.gymid = %s"
+                params = [zone_id, gym_id]
+
+            query += " ORDER BY z.gymid, z.zoneid"
+
+            self.cursor.execute(query, tuple(params))
+            if params:
                 return self.cursor.fetchone()
             else:
-                self.cursor.execute(
-                    """
-                    SELECT zoneid, gymid, zonetype, onlyformembers, isaccessible
-                    FROM zone
-                    ORDER BY gymid, zoneid
-                    """
-                )
                 return self.cursor.fetchall()
+
         except Exception as e:
             print(f"❌ Error reading zones: {e}")
             return None
-
+        
     # UPDATE
     def update_zone(self, zone_id, gym_id, zone_type=None, only_for_members=None, is_accessible=None):
         try:

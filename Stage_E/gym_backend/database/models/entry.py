@@ -1,4 +1,4 @@
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 class EntryManager:

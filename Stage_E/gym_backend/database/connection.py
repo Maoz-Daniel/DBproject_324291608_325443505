@@ -1,5 +1,5 @@
 import psycopg2
-from config import DB_CONFIG
+from gym_backend.config import DB_CONFIG
 
 
 def get_connection():

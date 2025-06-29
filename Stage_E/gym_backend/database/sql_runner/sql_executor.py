@@ -1,6 +1,6 @@
 import psycopg2
 import os
-from database.connection import get_connection
+from gym_backend.database.connection import get_connection
 
 
 def execute_sql_file(file_path):
