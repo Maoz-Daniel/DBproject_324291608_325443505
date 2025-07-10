@@ -1158,20 +1158,22 @@ Dashboard, ניהול מנויים, ניהול אזורים, ניהול רשומ
 הדוחות מחולקים לשלוש קטגוריות:
 
 ###### Functions
-- **Long Visits Detection** – מאתר מתאמנים עם זמני שהיה חריגים.
-- **Employee Salary Summary** – מחולל טבלת שכר לפי נתוני שעות/תפקיד.
+- **Long Visits Detection** - מאתר מתאמנים עם זמני שהיה חריגים.
+- **Employee Salary Summary** - מחולל טבלת שכר לפי נתוני שעות/תפקיד.
 
 ###### Stored Procedures
-- **Deactivate Old Members** – מנטרל מנויים שלא היו פעילים מספר חודשים.
-- **Update Job Cost** – מעדכן עלות תפקידים לפי סוג שירות ועלות בסיסית.
+- **Deactivate Old Members** - מנטרל מנויים שלא היו פעילים מספר חודשים.
+- **Update Job Cost** - מעדכן עלות תפקידים לפי סוג שירות ועלות בסיסית.
 
 ###### Reports & Queries
-- **Gym Entry Summary** – מספר כניסות לכל חדר כושר עם יותר מ־3 אזורים.
-- **Monthly Entry Summary** – סכימת כניסות לכל חודש ב־2025 לפי חדר כושר.
-- **Entry/Exit Busy Zones** – רשומות כניסה/יציאה מאזורים עמוסים במיוחד.
-- **Devices Below Average Exits** – סוגי מכשירים עם פחות יציאות מהממוצע.
-- **Inaccessible Zones** – חדרי כושר עם ≥2 אזורים חסומים ו≥3 כניסות.
-- **Gyms Over 5 Repairs** – חדרי כושר שבוצעו בהם מעל חמישה תיקונים.
-- **Inactive Members** – מנויים פעילים שלא ביקרו מאז ינואר 2025.
+- **Gym Entry Summary** - מספר כניסות לכל חדר כושר עם יותר מ־3 אזורים.
+- **Monthly Entry Summary** - סכימת כניסות לכל חודש ב־2025 לפי חדר כושר.
+- **Entry/Exit Busy Zones** - רשומות כניסה/יציאה מאזורים עמוסים במיוחד.
+- **Devices Below Average Exits** - סוגי מכשירים עם פחות יציאות מהממוצע.
+- **Inaccessible Zones** - חדרי כושר עם ≥2 אזורים חסומים ו≥3 כניסות.
+- **Gyms Over 5 Repairs** - חדרי כושר שבוצעו בהם מעל חמישה תיקונים.
+- **Inactive Members** - מנויים פעילים שלא ביקרו מאז ינואר 2025.
 
 ![Reports](Stage_E/images/reports.png)
+##### תוצאות שאילתא 1 :
+![Reports_res](Stage_E/images/reports_res.png)
