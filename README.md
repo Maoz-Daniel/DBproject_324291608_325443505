@@ -1092,6 +1092,7 @@ Dashboard, ניהול מנויים, ניהול אזורים, ניהול רשומ
 
 #### API Integration
 התקשורת בין הפרונט לבאק מתבצעת באמצעות **קריאות API** (GET, POST), כאשר כל פעולה בממשק (כמו הוספת מנוי או הרצת דוח) מפעילה בקשה לשרת ומחזירה תוצאה בהתאם.
+```
 App (Full Stack System)
 ├── Frontend (React + TypeScript)
 │   ├── components
@@ -1125,6 +1126,7 @@ App (Full Stack System)
     └── Database (PostgreSQL)
         ├── Tables: member, person, gym, entryRecord, zone, repair, etc.
         └── Views/Procedures: summarized reports, triggers, validations
+        ```
 ---
 
 ###  מסכים
