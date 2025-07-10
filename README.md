@@ -1113,3 +1113,35 @@ Dashboard, ניהול מנויים, ניהול אזורים, ניהול רשומ
 ה־backend מתקשר עם בסיס הנתונים PostgreSQL.  
 הנתונים נשלפים ונשמרים בטבלאות `member` ו־`person`, דרך המודול `members_routes.py` וה־models המתאימים. החיבור למסד הנתונים מתבצע באמצעות `get_connection()` מתוך `connection.py`.
 ![Members](Stage_E/images/members.png)
+
+#### Zones  
+מסך זה מאפשר לנהל את האזורים (Zones) בכל אחד מהחדרי כושר. ניתן לצפות ברשימת האזורים, להוסיף אזור חדש, לערוך פרטים קיימים ולמחוק אזורים שאינם בשימוש. כל אזור מקושר לחדר כושר מסוים.
+
+##### התממשקות ל־ API  
+המסך מתקשר לשרת באמצעות קריאות API דרך ה־hook `useApi.ts`, לפעולות CRUD הבאות:
+- `GET /zones` - לקבלת רשימת אזורים
+- `POST /zones` - להוספת אזור חדש
+- `PUT /zones/{id}` - לעדכון פרטי אזור
+- `DELETE /zones/{id}` - למחיקת אזור
+
+##### חיבור לבסיס הנתונים  
+ה־backend מבצע שאילתות מול PostgreSQL על טבלת `zone`, בשילוב עם טבלת `gym` לצורך קישור בין אזור לחדר כושר. הפעולות מוגדרות ב־`zones_routes.py`, ומבוצעות דרך פונקציות הגישה במסד הנתונים (`get_connection()`).
+
+![Zones](Stage_E/images/zones.png)
+
+#### Entry/Exit Records  
+מסך זה מאפשר לנהל את רשומות הכניסה והיציאה של אנשים מהאזורים השונים בחדרי הכושר. ניתן להוסיף רשומת כניסה, להוסיף יציאה לרשומה קיימת, לצפות בכלל הרשומות ולמחוק במידת הצורך. המסך משמש גם לניטור תנועה ולבקרת גישה.
+
+##### התממשקות ל־ API  
+המסך מבצע קריאות API באמצעות `useApi.ts` לנקודות קצה שנכתבו ב־FastAPI:
+- `GET /entry-exit/entries` - לקבלת רשומות כניסה
+- `GET /entry-exit/exits` - לקבלת רשומות יציאה
+- `POST /entry-exit/entries` - הוספת רשומת כניסה
+- `POST /entry-exit/exits` - הוספת רשומת יציאה
+- `DELETE /entry-exit/entry/{id}` - מחיקת רשומת כניסה
+- `DELETE /entry-exit/exit/{id}` - מחיקת רשומת יציאה
+
+##### חיבור לבסיס הנתונים  
+ה־backend מתחבר למסד הנתונים PostgreSQL ומבצע פעולות על טבלאות `entryRecord` ו־`exitRecord`, תוך בדיקת שלמות לוגית (למשל, יציאה ללא כניסה תגרום לשגיאה). הלוגיקה העסקית ממומשת ב־`entry_exit_routes.py`, והחיבור למסד מתבצע דרך `get_connection()` מתוך `connection.py`.
+
+![EntryExit Records](Stage_E/images/entryexit.png)
