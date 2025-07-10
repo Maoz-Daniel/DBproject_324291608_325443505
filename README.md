@@ -1177,3 +1177,10 @@ Dashboard, ניהול מנויים, ניהול אזורים, ניהול רשומ
 ![Reports](Stage_E/images/reports.png)
 ##### תוצאות שאילתא 1 :
 ![Reports_res](Stage_E/images/reports_res.png)
+
+##### דוגמאות שונות
+![update_member](Stage_E/images/update_member.png)
+---
+![fail_entry](Stage_E/images/fail_entry.png)
+
+
