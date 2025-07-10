@@ -1093,6 +1093,39 @@ Dashboard, ניהול מנויים, ניהול אזורים, ניהול רשומ
 #### API Integration
 התקשורת בין הפרונט לבאק מתבצעת באמצעות **קריאות API** (GET, POST), כאשר כל פעולה בממשק (כמו הוספת מנוי או הרצת דוח) מפעילה בקשה לשרת ומחזירה תוצאה בהתאם.
 
+App (Full Stack System)
+├── Frontend (React + TypeScript)
+│   ├── components
+│   │   ├── Dashboard
+│   │   ├── Members
+│   │   ├── Zones
+│   │   ├── Logs (Entry/Exit)
+│   │   ├── Reports
+│   │   └── UI (Modal, Dialog, Table...)
+│   ├── hooks
+│   │   └── useApi.ts
+│   └── types
+│       └── index.ts
+│
+├── API (REST)
+│   ├── GET /members
+│   ├── POST /entry-exit/entries
+│   ├── POST /reports/deactivate-old-members
+│   ├── GET /reports/monthly-entry-summary
+│   └── ... (many more endpoints)
+│
+└── Backend (FastAPI + PostgreSQL)
+    ├──routes (e.g., members_routes.py)
+    ├── models (e.g., member_model.py)
+    ├──database
+    │   ├── connection.py
+    │   └── sql queries & logic
+    ├── business logic
+    │   ├── deactivate_old_members()
+    │   └── run_query_and_fetch_results()
+    └── Database (PostgreSQL)
+        ├── Tables: member, person, gym, entryRecord, zone, repair, etc.
+        └── Views/Procedures: summarized reports, triggers, validations
 ---
 
 ###  מסכים
