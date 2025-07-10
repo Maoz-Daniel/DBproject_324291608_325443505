@@ -1126,7 +1126,7 @@ App (Full Stack System)
     └── Database (PostgreSQL)
         ├── Tables: member, person, gym, entryRecord, zone, repair, etc.
         └── Views/Procedures: summarized reports, triggers, validations
-        ```
+  ```
 ---
 
 ###  מסכים
@@ -1217,4 +1217,28 @@ App (Full Stack System)
 ---
 ![fail_entry](Stage_E/images/fail_entry.png)
 
+#### התקנה והפעלה  
+בחלק זה תמצא הוראות שלב-אחרי-שלב להתקנת כל התלויות, הפעלת בסיס הנתונים, והרצת ה־Backend וה־Frontend של המערכת.
 
+##### דרישות מקדימות  
+- Python 3.11 ומעלה  
+- Node.js + npm  
+- Docker מותקן ופועל (להרצת PostgreSQL)  
+- או לחלופין, שרת PostgreSQL מותקן מקומית
+
+---
+
+##### התקנת תלויות ל־Backend  
+יש להיכנס לתיקיית הבקאנד (למשל `Stage_E/`) ולהריץ:
+
+```bash
+pip install -r requirements.txt
+```
+קובץ requirements.txt כולל את כל הספריות הנדרשות להפעלת שרת ה־FastAPI, כולל התממשקות למסד PostgreSQL (psycopg2), טיפול ב־API (fastapi, httpx), ניהול סביבות (python-dotenv) ועוד.
+
+##### התקנת תלויות ל־Frontend
+יש להיכנס לתיקיית הפרונט (Stage_E/project/) ולהריץ:
+```bash
+npm install
+```
+פעולה זו תתקין את כל התלויות של React, כולל TailwindCSS, React Icons, React Router, ועוד חבילות לפי הקובץ package.json.
