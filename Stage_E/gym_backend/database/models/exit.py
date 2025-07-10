@@ -21,6 +21,7 @@ class ExitManager:
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error creating exit: {e}")
+            raise e  # 🔥 חובה כדי שהשגיאה תעבור הלאה
 
     # READ
     def read_exit(self, person_id=None, exit_time=None):
@@ -44,7 +45,7 @@ class ExitManager:
                 return self.cursor.fetchall()
         except Exception as e:
             print(f"❌ Error reading exit: {e}")
-            return None
+            raise e
 
     # UPDATE
     def update_exit(self, person_id, exit_time,
@@ -81,6 +82,7 @@ class ExitManager:
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error updating exit: {e}")
+            raise e
 
     # DELETE
     def delete_exit(self, person_id, exit_time):
@@ -97,6 +99,7 @@ class ExitManager:
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error deleting exit: {e}")
+            raise e
 
     # CLOSE
     def close(self):

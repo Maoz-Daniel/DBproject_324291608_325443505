@@ -41,17 +41,18 @@ class ApiClient {
 
       if (!response.ok) {
         const errorMessage = (data && data.detail) || response.statusText;
-        throw new Error(`Error ${response.status}: ${errorMessage}`);
+        throw new Error(errorMessage);
       }
 
       return data;
     } catch (error) {
-      console.error('API request failed:', error);
-      throw error;
+      const message =
+        error instanceof Error ? error.message : 'An error occurred';
+      console.error('❌ API request failed:', message);
+      throw new Error(message);
     }
   }
 
-  // Generic CRUD operations
   async get<T>(endpoint: string): Promise<T> {
     return this.request<T>(endpoint);
   }
@@ -70,8 +71,18 @@ class ApiClient {
     });
   }
 
-  async delete<T>(endpoint: string): Promise<T> {
-    return this.request<T>(endpoint, {
+  async delete<T>(endpoint: string, params?: Record<string, any>): Promise<T> {
+    const urlParams = params
+      ? '?' +
+        Object.entries(params)
+          .map(
+            ([key, value]) =>
+              `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+          )
+          .join('&')
+      : '';
+
+    return this.request<T>(endpoint + urlParams, {
       method: 'DELETE',
     });
   }
@@ -101,7 +112,8 @@ export function useApi<T>(endpoint: string, deps: any[] = []) {
       const result = await apiClient.get<T>(endpoint);
       setData(result);
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'An error occurred';
+      const errorMessage =
+        err instanceof Error ? err.message : 'An error occurred';
       setError(errorMessage);
       toast.error(`❌ ${errorMessage}`);
     } finally {
@@ -123,18 +135,27 @@ export function useMutation<T, P = any>() {
   const mutate = async (
     method: 'get' | 'post' | 'put' | 'delete',
     endpoint: string,
-    data?: P
+    data?: P | Record<string, any>
   ): Promise<T | null> => {
     try {
       setLoading(true);
       setError(null);
-      const result = await apiClient[method]<T>(endpoint, data);
+      let result: T;
+
+      if (method === 'delete') {
+        result = await apiClient.delete<T>(endpoint, data as Record<string, any>);
+      } else {
+        result = await apiClient[method]<T>(endpoint, data);
+      }
+
       if (method !== 'get') {
         toast.success('✅ Operation completed successfully');
       }
+
       return result;
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'An error occurred';
+      const errorMessage =
+        err instanceof Error ? err.message : 'An error occurred';
       setError(errorMessage);
       toast.error(`❌ ${errorMessage}`);
       return null;

@@ -27,6 +27,8 @@ export default function ZoneForm({
     isaccessible: true,
   });
 
+  const isEditMode = !!zone;
+
   const { data: gyms, loading: gymsLoading, error: gymsError } = useApi<any[]>('/gyms');
 
   useEffect(() => {
@@ -48,7 +50,7 @@ export default function ZoneForm({
   ) => {
     const { name, value, type } = e.target;
     const checked = (e.target as HTMLInputElement).checked;
-    
+
     setFormData((prev) => ({
       ...prev,
       [name]:
@@ -99,7 +101,7 @@ export default function ZoneForm({
     >
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Zone ID */}
-        {!zone && (
+        {!isEditMode && (
           <div>
             <label htmlFor="zoneid" className="block mb-2 font-medium">
               Zone ID
@@ -121,16 +123,23 @@ export default function ZoneForm({
           <label htmlFor="gymid" className="block mb-2 font-medium">
             Gym
           </label>
-          <select
-            id="gymid"
-            name="gymid"
-            value={formData.gymid || ''}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-2 border rounded"
-          >
-            {renderGymOptions()}
-          </select>
+
+          {isEditMode ? (
+            <div className="w-full px-4 py-2 border rounded bg-gray-100">
+              {zone?.gymname} - {zone?.city}
+            </div>
+          ) : (
+            <select
+              id="gymid"
+              name="gymid"
+              value={formData.gymid || ''}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 border rounded"
+            >
+              {renderGymOptions()}
+            </select>
+          )}
         </div>
 
         {/* Zone Type */}
@@ -179,7 +188,7 @@ export default function ZoneForm({
             disabled={loading}
             className="flex-1 py-2 bg-amber-600 text-white rounded hover:bg-amber-700 disabled:opacity-60"
           >
-            {loading ? 'Saving...' : zone ? 'Update Zone' : 'Add Zone'}
+            {loading ? 'Saving...' : isEditMode ? 'Update Zone' : 'Add Zone'}
           </button>
           <button
             type="button"

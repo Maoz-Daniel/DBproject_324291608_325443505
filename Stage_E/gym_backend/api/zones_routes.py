@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException
+import psycopg2
 from pydantic import BaseModel
 from typing import Optional
 from gym_backend.database.models.zone import ZoneManager
@@ -6,7 +7,6 @@ from gym_backend.database.models.zone import ZoneManager
 router = APIRouter()
 
 
-# 📦 מודל לנתונים
 class Zone(BaseModel):
     zone_id: int
     gym_id: int
@@ -26,7 +26,9 @@ def get_zones():
                 "gymid": z[1],
                 "zonetype": z[2],
                 "onlyformembers": z[3],
-                "isaccessible": z[4]
+                "isaccessible": z[4],
+                "gymname": z[5],       
+                "city": z[6]  
             }
             for z in zones
         ]
@@ -36,7 +38,6 @@ def get_zones():
 
 
 
-# ✔️ שליפת אזור לפי מזהה
 @router.get("/{zone_id}/{gym_id}", summary="Get zone by zone_id and gym_id")
 def get_zone(zone_id: int, gym_id: int):
     manager = ZoneManager()
@@ -49,7 +50,6 @@ def get_zone(zone_id: int, gym_id: int):
         manager.close()
 
 
-# ✔️ יצירת אזור חדש
 @router.post("/", summary="Create a new zone")
 def create_zone(zone: Zone):
     manager = ZoneManager()
@@ -62,11 +62,12 @@ def create_zone(zone: Zone):
             is_accessible=zone.is_accessible
         )
         return {"status": "Zone created successfully"}
+    except Exception as e:
+        handle_db_error(e, "Zone")
     finally:
         manager.close()
 
 
-# ✔️ עדכון אזור
 @router.put("/{zone_id}/{gym_id}", summary="Update a zone")
 def update_zone(
     zone_id: int,
@@ -85,16 +86,37 @@ def update_zone(
             is_accessible=is_accessible
         )
         return {"status": "Zone updated successfully"}
+    except Exception as e:
+        handle_db_error(e, "Zone")
     finally:
         manager.close()
 
 
-# ✔️ מחיקת אזור
+
 @router.delete("/{zone_id}/{gym_id}", summary="Delete a zone")
 def delete_zone(zone_id: int, gym_id: int):
     manager = ZoneManager()
     try:
         manager.delete_zone(zone_id=zone_id, gym_id=gym_id)
         return {"status": "Zone deleted successfully"}
+    except Exception as e:
+        handle_db_error(e, "Zone")
     finally:
         manager.close()
+
+def handle_db_error(e: Exception, entity: str = "Zone"):
+    error_message = str(e)
+    print(f"❌ Database error on {entity.lower()}: {error_message}")
+
+    if "duplicate key value violates unique constraint" in error_message:
+        raise HTTPException(status_code=400, detail=f"❌ {entity} with given ID already exists.")
+
+    if "violates foreign key constraint" in error_message:
+        if "gym" in error_message:
+            raise HTTPException(status_code=400, detail="❌ Gym ID does not exist.")
+        raise HTTPException(status_code=400, detail=f"❌ Foreign key violation in {entity.lower()}")
+
+    if "violates check constraint" in error_message:
+        raise HTTPException(status_code=400, detail=f"❌ Invalid data for {entity.lower()}.")
+
+    raise HTTPException(status_code=500, detail="❌ Internal Server Error")

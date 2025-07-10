@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from typing import Optional
+from pydantic import BaseModel
 from gym_backend.database.sql_runner.functions_runner import run_get_long_visits_cursor, run_get_employees_salary_summary
 from gym_backend.database.sql_runner.procedures_runner import run_deactivate_old_members, run_update_jobs_cost_by_type
 from gym_backend.database.sql_runner.queries_runner import (
@@ -45,27 +46,33 @@ def get_salary_summary():
 # ===========================================
 
 # ✔️ ביטול חברים לא פעילים
+class DeactivationRequest(BaseModel):
+    months: int
+
 @router.post("/deactivate-old-members", summary="Deactivate old members")
-def deactivate_old_members(months: int = 6):
+def deactivate_old_members(request: DeactivationRequest):
     try:
-        run_deactivate_old_members(months)
-        return {"status": f"Deactivated members inactive over {months} months"}
+        run_deactivate_old_members(request.months)
+        return {"status": f"Deactivated members inactive over {request.months} months"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# ✔️ עדכון עלות עבודות לפי סוג שירות
+class JobCostUpdateInput(BaseModel):
+    serviceType: str
+    baseCost: float
+
 @router.post("/update-job-cost", summary="Update job cost by service type")
-def update_job_cost(service_type: str, base_cost: float):
+def update_job_cost(data: JobCostUpdateInput):
     try:
-        run_update_jobs_cost_by_type(service_type, base_cost)
+        run_update_jobs_cost_by_type(data.serviceType, data.baseCost)
         return {"status": "Job costs updated successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
 # ===========================================
-# ✅ שאילתות (Queries / Reports)
+# (Queries / Reports)
 # ===========================================
 
 @router.get("/gym-entry-summary", summary="Gym entry zone summary")

@@ -21,6 +21,7 @@ class EntryManager:
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error creating entry: {e}")
+            raise e  # 🔥 חובה כדי שהשגיאה תעבור הלאה
 
     # READ
     def read_entry(self, person_id=None, entry_time=None):
@@ -44,7 +45,7 @@ class EntryManager:
                 return self.cursor.fetchall()
         except Exception as e:
             print(f"❌ Error reading entry: {e}")
-            return None
+            raise e  # ✅ גם פה נכון להעביר הלאה במידת הצורך
 
     # UPDATE
     def update_entry(self, person_id, entry_time,
@@ -81,6 +82,7 @@ class EntryManager:
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error updating entry: {e}")
+            raise e
 
     # DELETE
     def delete_entry(self, person_id, entry_time):
@@ -97,6 +99,7 @@ class EntryManager:
         except Exception as e:
             self.conn.rollback()
             print(f"❌ Error deleting entry: {e}")
+            raise e
 
     # CLOSE
     def close(self):
